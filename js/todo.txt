@@ -1,0 +1,19 @@
+TO DO
+--------
+
+ADD
+- Labels, object and XML
+- Colour, size
+
+EDIT
+- Modify on change
+
+SAVE
+- Export to XML
+- Save to XML
+
+VIEW
+- Drag/move
+- Better info display
+
+PATH

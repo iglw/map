@@ -7,6 +7,9 @@
 		<xco>20</xco>
 		<yco>20</yco>
 		<size>5</size>
+		<xla>20</xla>
+		<yla>20</yla>
+		<labelsize>13</labelsize>
 		<cname>Toronto</cname>
 		<img>toronto.png</img>
 		<desc>A city</desc>
@@ -15,6 +18,9 @@
 		<xco>223</xco>
 		<yco>473</yco>
 		<size>5</size>
+		<xla>220</xla>
+		<yla>470</yla>
+		<labelsize>13</labelsize>
 		<cname>Quebec</cname>
 		<img>quebec.png</img>
 		<desc>Another city</desc>
@@ -23,6 +29,9 @@
 		<xco>56</xco>
 		<yco>477</yco>
 		<size>5</size>
+		<xla>56</xla>
+		<yla>477</yla>
+		<labelsize>13</labelsize>
 		<cname>London</cname>
 		<img>london.png</img>
 		<desc>Faraway city</desc>
@@ -31,6 +40,9 @@
 		<xco>723</xco>
 		<yco>63</yco>
 		<size>5</size>
+		<xla>723</xla>
+		<yla>63</yla>
+		<labelsize>13</labelsize>
 		<cname>Sydney</cname>
 		<img>sydney.png</img>
 		<desc>Loves opera</desc>

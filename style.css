@@ -1,0 +1,20 @@
+body {
+	background-color: rgb(31, 54, 33);
+}
+
+a {
+	color: rgb(255, 255, 255);
+}
+
+#editBar {
+	background: #CEDDCF;
+	border: 1px solid black;
+	z-index: 100;
+	display: block;
+	margin-right: 25px;
+	padding: 25px;
+	width: 350px;
+	float: right;
+	/*display: none;*/
+	border-radius: 5px;
+}
