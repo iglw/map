@@ -1,0 +1,38 @@
+<map>
+	<title>Canada</title>
+	<width>22</width>
+	<height>44</height>
+	<source>mapsource.png</source>
+	<city>
+		<xco>23</xco>
+		<yco>133</yco>
+		<size>1</size>
+		<name>Toronto</name>
+		<img>toronto.png</img>
+		<desc>A city</desc>
+	</city>
+	<city>
+		<xco>223</xco>
+		<yco>473</yco>
+		<size>1</size>
+		<name>Quebec</name>
+		<img>quebec.png</img>
+		<desc>Another city</desc>
+	</city>
+	<city>
+		<xco>56</xco>
+		<yco>477</yco>
+		<size>1</size>
+		<name>London</name>
+		<img>london.png</img>
+		<desc>Faraway city</desc>
+	</city>
+	<city>
+		<xco>723</xco>
+		<yco>63</yco>
+		<size>1</size>
+		<name>Sydney</name>
+		<img>sydney.png</img>
+		<desc>Loves opera</desc>
+	</city>
+</map>
