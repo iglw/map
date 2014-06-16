@@ -49,7 +49,16 @@ $(document).ready(function(){
 		<script>
 			$("#nameEd").change(function(event) {
 				selected.changeLabel("text", $("#nameEd").val());
+				selected.cname = $("#nameEd").val();
 			});
+			$("#imgEd").change(function(event) {
+				selected.img = $("#imgEd").val();
+			});
+			$("#descEd").change(function(event) {
+				selected.desc = $("#descEd").val();
+			});
+
+
 			$("#labelsizeEd").change(function(event) {
 				selected.changeLabel("font-size", $("#labelsizeEd").val());
 			});
@@ -73,6 +82,21 @@ $(document).ready(function(){
 
 
 	</form>
+
+<pre>
+TODO:
+- Better indicators for mode
+- Better edit menu
+- Confirm to remove
+- Coloured cities
+- Better labelling
+- Save
+- Viewing options
+- Better site layout
+- New map/other maps
+
+</pre>
+
 </div>
 
 </body>
