@@ -89,7 +89,10 @@ function removeCity(cityObj) {
 	cityList.splice($.inArray(cityObj,cityList),1);
 	// Remove circle
 	cityObj.circle.remove();
-	// FUTURE: Remove label
+	// Remove label
+	cityObj.label.remove();
+	// Remove box
+	cityObj.box.remove();
 }
 
 // Takes a city object, creates a circle for it and draws it onto the map.
@@ -117,14 +120,14 @@ function removeCity(cityObj) {
 }*/
 
 // Load the city's info onto the display panel
-function loadCityInfo(cityObj) {
+/*function loadCityInfo(cityObj) {
 	$("#nameEd").text(cityObj.cname);
 	$("#xEd").text(cityObj.yco);
 	$("#yEd").text(cityObj.xco);
 	$("#sizeEd").text(cityObj.size);
 	$("#imgEd").text(cityObj.img);
 	$("#descEd").text(cityObj.desc);
-}
+}*/
 
 // Initializes canvas
 function initCanvas() {
@@ -139,7 +142,7 @@ function initCanvas() {
 			var x = event.pageX - parseInt($(paper.canvas).css("left"));
 			var y = event.pageY - parseInt($(paper.canvas).css("top"));
 			//alert(x+","+y);
-			loadCityInfo(addCity("MooTown", 5, "moo.png", "Moo cow.", x, y, x, y-12, "12"));
+			loadCityInfo(addCity("New City", 5, "default.png", "This is a new city.", x, y, x, y-14, "12"));
 		}
 	});
 }

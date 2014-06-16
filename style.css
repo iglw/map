@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'bree';
+    src: url('font/breeserif-regular-webfont.eot');
+    src: url('font/breeserif-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/breeserif-regular-webfont.woff') format('woff'),
+         url('font/breeserif-regular-webfont.ttf') format('truetype'),
+         url('font/breeserif-regular-webfont.svg#bree_serifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
 	background-color: rgb(31, 54, 33);
 }
@@ -17,4 +28,8 @@ a {
 	float: right;
 	/*display: none;*/
 	border-radius: 5px;
+	position: absolute;
+	right: 15px;
+	top: 30px;
 }
+

@@ -8,7 +8,7 @@
 		<yco>20</yco>
 		<size>5</size>
 		<xla>20</xla>
-		<yla>20</yla>
+		<yla>40</yla>
 		<labelsize>13</labelsize>
 		<cname>Toronto</cname>
 		<img>toronto.png</img>
@@ -19,7 +19,7 @@
 		<yco>473</yco>
 		<size>5</size>
 		<xla>220</xla>
-		<yla>470</yla>
+		<yla>490</yla>
 		<labelsize>13</labelsize>
 		<cname>Quebec</cname>
 		<img>quebec.png</img>
@@ -30,7 +30,7 @@
 		<yco>477</yco>
 		<size>5</size>
 		<xla>56</xla>
-		<yla>477</yla>
+		<yla>497</yla>
 		<labelsize>13</labelsize>
 		<cname>London</cname>
 		<img>london.png</img>
@@ -41,7 +41,7 @@
 		<yco>63</yco>
 		<size>5</size>
 		<xla>723</xla>
-		<yla>63</yla>
+		<yla>83</yla>
 		<labelsize>13</labelsize>
 		<cname>Sydney</cname>
 		<img>sydney.png</img>

@@ -34,12 +34,44 @@ $(document).ready(function(){
 	City Information: <br/>
 	<form>
 		Name: <input type="text" id="nameEd"></input><br/>
-		X:  <input type="text" id="xEd"></input><br/>
-		Y:  <input type="text" id="yEd"></input><br/>
-		Size:  <input type="text" id="sizeEd"></input></span><br/>
+		X:  <input type="number" id="xEd"></input><br/>
+		Y:  <input type="number" id="yEd"></input><br/>
+		Size:  <input type="number" id="sizeEd"></input></span><br/>
 		Image:  <input type="text" id="imgEd"></input><br/>
 		Description:  <input type="text" id="descEd"></input></span><br/>
+
+		Label X:  <input type="number" id="xlaEd"></input><br/>
+		Label Y:  <input type="number" id="ylaEd"></input><br/>
+		Label Size:  <input type="number" id="labelsizeEd"></input><br/>	
+
 		<a href="#" onclick="removeCity(selected);">Remove</a>
+
+		<script>
+			$("#nameEd").change(function(event) {
+				selected.changeLabel("text", $("#nameEd").val());
+			});
+			$("#labelsizeEd").change(function(event) {
+				selected.changeLabel("font-size", $("#labelsizeEd").val());
+			});
+			$("#xlaEd").change(function(event) {
+				selected.changeLabel("x", $("#xlaEd").val());
+			});
+			$("#ylaEd").change(function(event) {
+				selected.changeLabel("y", $("#ylaEd").val());
+			});
+
+			$("#xEd").change(function(event) {
+				selected.changeCircle("cx", $("#xEd").val());
+			});
+			$("#yEd").change(function(event) {
+				selected.changeCircle("cy", $("#yEd").val());
+			});
+			$("#sizeEd").change(function(event) {
+				selected.changeCircle("r", $("#sizeEd").val());
+			});
+		</script>
+
+
 	</form>
 </div>
 
