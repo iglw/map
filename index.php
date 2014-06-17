@@ -27,7 +27,8 @@ $(document).ready(function(){
 <a href="#" onclick="setMode(0);">View</a> |
 <a href="#" onclick="setMode(1);">Add</a> |
 <a href="#" onclick="setMode(2);">Remove</a> | 
-<a href="#" onclick="setMode(3);">Edit</a>
+<a href="#" onclick="setMode(3);">Edit</a> | 
+<a href="#" onclick="exportCity();">Save</a>
 </p>
 
 <div id="editBar">
@@ -96,13 +97,16 @@ $(document).ready(function(){
 
 <pre>
 TODO:
-- Mode indicators	DONE (cursors)
+- Mode cursors		DONE*
+- Mode buttons
 - Better edit menu
+- Fix right alignment
 - Confirm to remove	DONE
 - Coloured cities 	DONE
 - Better labelling 	DONE
-- Save
+- Save			DONE
 - View/Edit Separation
+- Clean form fields
 - Drag and Drop?
 - Keyboard shortcuts
 - Better site layout

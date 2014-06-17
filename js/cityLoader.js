@@ -17,7 +17,7 @@ function drawCities() {
 // Initializes canvas with information from file and populates map with cities.
 
 function loadCitiesXML() {
-	$.get('map.xml', function(mapdata) {
+	$.get('test.xml', function(mapdata) {
 		var data = $(mapdata);
 		// Get map information
 		mapName = data.find('title').text();
