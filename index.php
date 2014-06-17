@@ -32,7 +32,7 @@ $(document).ready(function(){
 
 <div id="editBar">
 	City Information: <br/>
-	<form>
+	<form id="editForm">
 		City Name: 	<input type="text" id="cityNameEd"></input><br/>
 		Image:  	<input type="text" id="cityImgEd"></input><br/>
 		Description:  	<input type="text" id="cityDescEd"></input></span><br/>
@@ -96,13 +96,15 @@ $(document).ready(function(){
 
 <pre>
 TODO:
-- Better indicators for mode
+- Mode indicators	DONE (cursors)
 - Better edit menu
-- Confirm to remove
-- Coloured cities
-- Better labelling
+- Confirm to remove	DONE
+- Coloured cities 	DONE
+- Better labelling 	DONE
 - Save
-- Viewing options
+- View/Edit Separation
+- Drag and Drop?
+- Keyboard shortcuts
 - Better site layout
 - New map/other maps
 

@@ -68,7 +68,10 @@ function City(cName, cImg, cDesc, nX, nY, nR, nColor, lX, lY, lSize, lColor) {
 	// Function: Click Me
 	// What happens when the city is clicked on
 	this.clickMe = function() {
-		if (mode==2) {
+		
+		if (mode==2 && confirm("Are you sure?")) {
+			thisCity.hoverOffMe();
+			clearCityInfo();
 			removeCity(this);
 		} else {
 			loadCityInfo(this);
@@ -80,12 +83,12 @@ function City(cName, cImg, cDesc, nX, nY, nR, nColor, lX, lY, lSize, lColor) {
 	// Functions for when this city is hovered over
 	this.hoverOnMe = function() {
 		this.circle.attr("fill", "blue")
-		$(paper.canvas).css("cursor", "pointer");
+		paperCanvas.css("cursor", "url('" + hoverOnCursor + "') 13 13, default");
 	}
 	this.hoverOffMe = function() {
 		//alert(thisCity.nColor);
 		this.circle.attr("fill", thisCity.nColor)
-		$(paper.canvas).css("cursor", "cursor");
+		paperCanvas.css("cursor", "url('" + hoverOffCursor + "') 13 13, default");
 	}
 
 	// Function to change label's attribute
@@ -116,7 +119,12 @@ var cityList = [],
 	mapHeight = 0,
 	mapSource = "";
 
-var paper, base, selected, mode;
+var paper, base, selected, mode, hoverOnCursor, hoverOffCursor;
+var paperCanvas;
+var mode = 0;
+var hoverOnCursor = "img/cursor_cross_eye_n.png";
+var hoverOffCursor = "img/cursor_cross_eye.png";
+
 
 // Mode
 // ---------------
@@ -129,6 +137,21 @@ var paper, base, selected, mode;
 function setMode(num) {
 	mode = num;
 	// FUTURE: Change mode specific display: cursor, buttons
+	switch(mode) {
+		case 1:
+			hoverOnCursor = "img/cursor_cross_eye_n.png";
+			hoverOffCursor = "img/cursor_cross_add.png";
+		break;
+		case 2:
+			hoverOnCursor = "img/cursor_cross_rem_n.png";
+			hoverOffCursor = "img/cursor_cross_rem.png";
+		break;
+		default:
+			hoverOnCursor = "img/cursor_cross_eye_n.png";
+			hoverOffCursor = "img/cursor_cross_eye.png";
+		break;
+	}
+	paperCanvas.css("cursor", "url('" + hoverOffCursor + "') 13 13, default");
 }
 
 

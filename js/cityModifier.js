@@ -15,3 +15,8 @@ function loadCityInfo(cityObj) {
 	$("#labelColorEd").val(cityObj.label.attr("fill"));
 }
 
+// Load the city's info onto the display panel
+function clearCityInfo() {
+	$("#editForm").trigger("reset");
+}
+

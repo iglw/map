@@ -80,6 +80,7 @@ function initCanvas() {
 	// Create the canvas
 	paper = Raphael(10, 50, 1337, 723);
 	base = paper.image("img/map_base.png", 0, 0, 1337, 723);
+	paperCanvas = $(paper.canvas)
 
 	// When you click on it, add a city and display it
 	base.click(function(event) {
@@ -87,7 +88,8 @@ function initCanvas() {
 			var x = event.pageX - parseInt($(paper.canvas).css("left"));
 			var y = event.pageY - parseInt($(paper.canvas).css("top"));
 			loadCityInfo(addCity("New City", "default.png", "This is a new city.", 
-						x, y, 5, "#5A312A", x, y-14, 13, "#5A312A"));
+						x, y, 5, "#5A312A", x, y-14, 12, "#5A312A"));
 		}
 	});
+	paperCanvas.css("cursor", "url('" + hoverOffCursor + "') 13 13, default");
 }
