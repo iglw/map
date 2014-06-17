@@ -4,47 +4,29 @@
 	<height>44</height>
 	<source>mapsource.png</source>
 	<city>
-		<xco>20</xco>
-		<yco>20</yco>
-		<size>5</size>
-		<xla>20</xla>
-		<yla>40</yla>
-		<labelsize>13</labelsize>
-		<cname>Toronto</cname>
-		<img>toronto.png</img>
-		<desc>A city</desc>
+		<cityName>Toronto</cityName>
+		<cityImg>toronto.png</cityImg>
+		<cityDesc>A city.</cityDesc>
+		<nodeX>177</nodeX>
+		<nodeY>139</nodeY>
+		<nodeR>5</nodeR>
+		<nodeColor>#5A312A</nodeColor>
+		<labelX>177</labelX>
+		<labelY>125</labelY>
+		<labelSize>13</labelSize>
+		<labelColor>#5A312A</labelColor>
 	</city>
 	<city>
-		<xco>223</xco>
-		<yco>473</yco>
-		<size>5</size>
-		<xla>220</xla>
-		<yla>490</yla>
-		<labelsize>13</labelsize>
-		<cname>Quebec</cname>
-		<img>quebec.png</img>
-		<desc>Another city</desc>
-	</city>
-	<city>
-		<xco>56</xco>
-		<yco>477</yco>
-		<size>5</size>
-		<xla>56</xla>
-		<yla>497</yla>
-		<labelsize>13</labelsize>
-		<cname>London</cname>
-		<img>london.png</img>
-		<desc>Faraway city</desc>
-	</city>
-	<city>
-		<xco>723</xco>
-		<yco>63</yco>
-		<size>5</size>
-		<xla>723</xla>
-		<yla>83</yla>
-		<labelsize>13</labelsize>
-		<cname>Sydney</cname>
-		<img>sydney.png</img>
-		<desc>Loves opera</desc>
+		<cityName>Quebec</cityName>
+		<cityImg>quebec.png</cityImg>
+		<cityDesc>A french city.</cityDesc>
+		<nodeX>208</nodeX>
+		<nodeY>279</nodeY>
+		<nodeR>5</nodeR>
+		<nodeColor>#5A312A</nodeColor>
+		<labelX>208</labelX>
+		<labelY>265</labelY>
+		<labelSize>13</labelSize>
+		<labelColor>#5A312A</labelColor>
 	</city>
 </map>

@@ -33,51 +33,62 @@ $(document).ready(function(){
 <div id="editBar">
 	City Information: <br/>
 	<form>
-		Name: <input type="text" id="nameEd"></input><br/>
-		X:  <input type="number" id="xEd"></input><br/>
-		Y:  <input type="number" id="yEd"></input><br/>
-		Size:  <input type="number" id="sizeEd"></input></span><br/>
-		Image:  <input type="text" id="imgEd"></input><br/>
-		Description:  <input type="text" id="descEd"></input></span><br/>
-
-		Label X:  <input type="number" id="xlaEd"></input><br/>
-		Label Y:  <input type="number" id="ylaEd"></input><br/>
-		Label Size:  <input type="number" id="labelsizeEd"></input><br/>	
+		City Name: 	<input type="text" id="cityNameEd"></input><br/>
+		Image:  	<input type="text" id="cityImgEd"></input><br/>
+		Description:  	<input type="text" id="cityDescEd"></input></span><br/>
+		<br/>
+		Dot X:  	<input type="number" id="nodeXEd"></input><br/>
+		Dot Y:  	<input type="number" id="nodeYEd"></input><br/>
+		Dot Size:  	<input type="number" id="nodeREd"></input></span><br/>
+		Dot Colour:  	<input type="text" id="nodeColorEd"></input></span><br/>
+		<br/>
+		Label X:  	<input type="number" id="labelXEd"></input><br/>
+		Label Y:  	<input type="number" id="labelYEd"></input><br/>
+		Label Size:  	<input type="number" id="labelSizeEd"></input><br/>	
+		Label Colour:  	<input type="text" id="labelColorEd"></input><br/>	
 
 		<a href="#" onclick="removeCity(selected);">Remove</a>
 
 		<script>
-			$("#nameEd").change(function(event) {
-				selected.changeLabel("text", $("#nameEd").val());
-				selected.cname = $("#nameEd").val();
+			$("#cityNameEd").change(function(event) {
+				selected.changeLabel("text", $("#cityNameEd").val());
+				selected.cName = $("#cityNameEd").val();
 			});
-			$("#imgEd").change(function(event) {
-				selected.img = $("#imgEd").val();
+			$("#cityImgEd").change(function(event) {
+				selected.cImg = $("#cityImgEd").val();
 			});
-			$("#descEd").change(function(event) {
-				selected.desc = $("#descEd").val();
+			$("#cityDescEd").change(function(event) {
+				selected.cDesc = $("#cityDescEd").val();
+			});
+
+			$("#nodeXEd").change(function(event) {
+				selected.changeCircle("cx", $("#nodeXEd").val());
+			});
+			$("#nodeYEd").change(function(event) {
+				selected.changeCircle("cy", $("#nodeYEd").val());
+			});
+			$("#nodeREd").change(function(event) {
+				selected.changeCircle("r", $("#nodeREd").val());
+			});
+			$("#nodeColorEd").change(function(event) {
+				selected.changeCircle("fill", $("#nodeColorEd").val());
+				selected.nColor = $("#nodeColorEd").val();
+			});
+
+			$("#labelXEd").change(function(event) {
+				selected.changeLabel("x", $("#labelXEd").val());
+			});
+			$("#labelYEd").change(function(event) {
+				selected.changeLabel("y", $("#labelYEd").val());
+			});
+			$("#labelSizeEd").change(function(event) {
+				selected.changeLabel("font-size", $("#labelSizeEd").val());
+			});
+			$("#labelColorEd").change(function(event) {
+				selected.changeLabel("fill", $("#labelColorEd").val());
 			});
 
 
-			$("#labelsizeEd").change(function(event) {
-				selected.changeLabel("font-size", $("#labelsizeEd").val());
-			});
-			$("#xlaEd").change(function(event) {
-				selected.changeLabel("x", $("#xlaEd").val());
-			});
-			$("#ylaEd").change(function(event) {
-				selected.changeLabel("y", $("#ylaEd").val());
-			});
-
-			$("#xEd").change(function(event) {
-				selected.changeCircle("cx", $("#xEd").val());
-			});
-			$("#yEd").change(function(event) {
-				selected.changeCircle("cy", $("#yEd").val());
-			});
-			$("#sizeEd").change(function(event) {
-				selected.changeCircle("r", $("#sizeEd").val());
-			});
 		</script>
 
 

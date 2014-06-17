@@ -1,9 +1,10 @@
 // City object constructor
-function City(cname, size, img, desc, xco, yco, xla, yla, labelsize) {
+function City(cName, cImg, cDesc, nX, nY, nR, nColor, lX, lY, lSize, lColor) {
 	// General attributes
-	this.cname = cname;
-	this.img = img;
-	this.desc = desc;
+	this.cName = cName;
+	this.cImg = cImg;
+	this.cDesc = cDesc;
+	this.nColor = nColor;
 
 	// Circle attribute (OPTIONAL: Store implicitly in this.circle
 	//this.xco = xco;
@@ -20,8 +21,8 @@ function City(cname, size, img, desc, xco, yco, xla, yla, labelsize) {
 	select(thisCity);
 
 	// Attribue: Circle
-	this.circle = paper.circle(xco, yco, size)
-		.attr({"fill": "rgb(68, 37, 18)", 
+	this.circle = paper.circle(nX, nY, nR)
+		.attr({"fill": nColor, 
 			"stroke": "#ffffff", 
 			"stroke-width": "1.3"})
 		.click(function(event) {thisCity.clickMe();})
@@ -29,11 +30,11 @@ function City(cname, size, img, desc, xco, yco, xla, yla, labelsize) {
 			function(event) {thisCity.hoverOffMe();});
 
 	// Attribue: Label
-	this.label = paper.text(xla, yla, cname)
-		.attr({ "font-size": 13, 
+	this.label = paper.text(lX, lY, cName)
+		.attr({ "font-size": lSize, 
 			"font-family": "bree", 
 			"font-weight": "bold", 
-			"fill": "rgb(68, 37, 18)" })
+			"fill": lColor })
 		.click(function(event) {thisCity.clickMe();})
 		.hover(function(event) {thisCity.hoverOnMe();},
 			function(event) {thisCity.hoverOffMe();});
@@ -78,11 +79,12 @@ function City(cname, size, img, desc, xco, yco, xla, yla, labelsize) {
 	// Function: Hover Me
 	// Functions for when this city is hovered over
 	this.hoverOnMe = function() {
-		this.circle.attr("fill", "#997777")
+		this.circle.attr("fill", "blue")
 		$(paper.canvas).css("cursor", "pointer");
 	}
 	this.hoverOffMe = function() {
-		this.circle.attr("fill", "#5A312A")
+		//alert(thisCity.nColor);
+		this.circle.attr("fill", thisCity.nColor)
 		$(paper.canvas).css("cursor", "cursor");
 	}
 
@@ -104,8 +106,8 @@ function City(cname, size, img, desc, xco, yco, xla, yla, labelsize) {
 	}
 }
 
-// List of attributes for each city
-var cityAttr = ["cname", "size", "img", "desc", "xco", "yco", "xla", "yla", "labelsize"];
+// List of attributes for each city (must match XML)
+var cityAttr = ["cityName", "cityImg", "cityDesc", "nodeX", "nodeY", "nodeR", "nodeColor", "labelX", "labelY", "labelSize", "labelColor"];
 
 // List of all cities as objects
 var cityList = [],

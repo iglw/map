@@ -1,13 +1,17 @@
 // Load the city's info onto the display panel
 function loadCityInfo(cityObj) {
-	$("#nameEd").val(cityObj.cname);
-	$("#xEd").val(cityObj.circle.attr("cx"));
-	$("#yEd").val(cityObj.circle.attr("cy"));
-	$("#sizeEd").val(cityObj.circle.attr("r"));
-	$("#imgEd").val(cityObj.img);
-	$("#descEd").val(cityObj.desc);
-	$("#xlaEd").val(cityObj.label.attr("x"));
-	$("#ylaEd").val(cityObj.label.attr("y"));
-	$("#labelsizeEd").val(cityObj.label.attr("font-size"));
+	$("#cityNameEd").val(cityObj.cName);
+	$("#cityImgEd").val(cityObj.cImg);
+	$("#cityDescEd").val(cityObj.cDesc);
+
+	$("#nodeXEd").val(cityObj.circle.attr("cx"));
+	$("#nodeYEd").val(cityObj.circle.attr("cy"));
+	$("#nodeREd").val(cityObj.circle.attr("r"));
+	$("#nodeColorEd").val(cityObj.nColor);
+
+	$("#labelXEd").val(cityObj.label.attr("x"));
+	$("#labelYEd").val(cityObj.label.attr("y"));
+	$("#labelSizeEd").val(cityObj.label.attr("font-size"));
+	$("#labelColorEd").val(cityObj.label.attr("fill"));
 }
 
