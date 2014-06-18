@@ -1,3 +1,13 @@
+// cityLoader.js
+// -------------------------------------
+// Contains functions related to the loading and unloading of the map from XML file
+// -drawCities() : Not in use
+// -loadCitiesXML() : Grabs data from XML and loads it into cityList[]
+// -exportCity() : Takes cityList and generates XML for php script saveCity.php
+// -initCanvas() : Handles everything directly on the canvas backdrop. Including click and drag.
+
+
+
 // drawCities() Function
 // -------------------------------
 // Takes current list of cities in cityList[] and draws them out on the canvas
@@ -17,13 +27,14 @@ function drawCities() {
 // Initializes canvas with information from file and populates map with cities.
 
 function loadCitiesXML() {
-	$.get('test.xml', function(mapdata) {
+	$.get('data/test.xml', function(mapdata) {
 		var data = $(mapdata);
 		// Get map information
 		mapName = data.find('title').text();
 		mapSource = data.find('source').text();
 		mapWidth = data.find('width').text();
 		mapHeight = data.find('height').text();
+
 		// Initialize Canvas
 		initCanvas();
 		
@@ -51,45 +62,123 @@ function loadCitiesXML() {
 	}); // End load information from XML
 }
 
-// addCity function
-// ------------------------------
-// Takes the attributes of a nonexisting city, creates a new city object and 
-// adds it to the list of cities. Then draws it onto the map.
-function addCity(cName, cImg, cDesc, nX, nY, nR, nColor, lX, lY, lSize, lColor) {
-	var newCity = new City(cName, cImg, cDesc, nX, nY, nR, nColor, lX, lY, lSize, lColor);
-	cityList.push(newCity);
-	//drawCity(newCity);
-	return newCity;
+
+// exportCity() 
+// -------------------
+// Exports city to xml file using php script
+
+function exportCity() {
+	var data = "<map>";
+	data += "\n\t<title>" + mapName + "</title>";
+	data += "\n\t<width>" + mapWidth + "</width>";
+	data += "\n\t<height>" + mapHeight + "</height>";
+	data += "\n\t<source>" + mapSource + "</source>";
+
+	for (var i = 0; i < cityList.length; i++) {
+		data += "\n\t<city>";
+		data += "\n\t\t<cityName>" + cityList[i].cName + "</cityName>";
+		data += "\n\t\t<cityImg>" + cityList[i].cImg + "</cityImg>";
+		data += "\n\t\t<cityDesc>" + cityList[i].cDesc + "</cityDesc>";
+	
+		data += "\n\t\t<nodeX>" + cityList[i].circle.attr("cx") + "</nodeX>";
+		data += "\n\t\t<nodeY>" + cityList[i].circle.attr("cy") + "</nodeY>";
+		data += "\n\t\t<nodeR>" + cityList[i].circle.attr("r") + "</nodeR>";
+		data += "\n\t\t<nodeColor>" + cityList[i].nColor + "</nodeColor>";
+
+	
+		data += "\n\t\t<labelX>" + cityList[i].label.attr("x") + "</labelX>";
+		data += "\n\t\t<labelY>" + cityList[i].label.attr("y") + "</labelY>";
+		data += "\n\t\t<labelSize>" + cityList[i].label.attr("font-size") + "</labelSize>";
+		data += "\n\t\t<labelColor>" + cityList[i].label.attr("fill") + "</labelColor>";
+
+
+		data += "\n\t</city>";
+	}
+
+	data += "\n</map>";
+	//console.log(data);
+	$.post('saveMap.php', 
+		{data: data}, 
+		function() {
+			console.log("success");
+			alert("Your map has been successfully saved.");
+		});
 }
 
-// removeCity function
-// ------------------------
-// Removes city from list
 
-function removeCity(cityObj) {
-	// Remove from list
-	cityList.splice($.inArray(cityObj,cityList),1);
-	// Remove circle, label, and box
-	cityObj.circle.remove();
-	cityObj.label.remove();
-	cityObj.box.remove();
-}
+// initCanvas()
+// -----------------------------
+// Initializes canvas by first creating paper, then defining functions for what happens when it is
+// clicked on. In Add Mode, creates a new city at the clicked location. In Drag Mode, the canvas is
+// moved with the cursor.
 
-// Initializes canvas
 function initCanvas() {
 	// Create the canvas
-	paper = Raphael(10, 50, 1337, 723);
+	paper = Raphael(0, 70, 1337, 723);
 	base = paper.image("img/map_base.png", 0, 0, 1337, 723);
 	paperCanvas = $(paper.canvas)
 
 	// When you click on it, add a city and display it
 	base.click(function(event) {
 		if (mode==1) {
-			var x = event.pageX - parseInt($(paper.canvas).css("left"));
-			var y = event.pageY - parseInt($(paper.canvas).css("top"));
+			var x = event.pageX - parseInt(paperCanvas.css("left"));
+			var y = event.pageY - parseInt(paperCanvas.css("top"));
 			loadCityInfo(addCity("New City", "default.png", "This is a new city.", 
 						x, y, 5, "#5A312A", x, y-14, 12, "#5A312A"));
 		}
+	
 	});
+
+	// hoverOffCursor is the default cursor for the map when not on a node
 	paperCanvas.css("cursor", "url('" + hoverOffCursor + "') 13 13, default");
+
+	// Dragging canvas begins here
+	// -------------------------------
+
+	// Variables for dragging
+	var dragging = false;
+	var 	mouseStartX, 
+		mouseStartY, 
+		canvasStartY, 
+		canvasStartX, 
+		mouseNowX, 
+		mouseNowY, 
+		canvasNowX, 
+		canvasNowY;
+
+	// Dragging: mouse down
+	base.mousedown(function(event) {
+		if (mode != 4) return;
+		// Dragging, starting values
+		dragging = true;
+		mouseStartX = event.pageX;
+		mouseStartY = event.pageY;
+		canvasStartY = parseInt(paperCanvas.css("top"));
+		canvasStartX = parseInt(paperCanvas.css("left"));
+		//console.log("starting:" + mouseStartX + "," + mouseStartY);
+	});
+
+	// Dragging: mouse up
+	base.mouseup(function(event) {
+		if (mode != 4) return;
+		// End dragging if mouse released
+		dragging = false;
+		console.log("end drag");
+	});
+
+	// Dragging: mouse move
+	base.mousemove(function(event) {
+		// As the mouse moves, so does the canvas
+		if (dragging && mode == 4) {
+			mouseNowX = event.pageX;
+			mouseNowY = event.pageY;
+			//console.log("moving:" + mouseNowX + "," + mouseNowY);
+			canvasNowX = canvasStartX + mouseNowX - mouseStartX;
+			canvasNowY = canvasStartY + mouseNowY - mouseStartY;
+			//console.log(canvasNowX);
+			paperCanvas.css({ "left": canvasNowX + "px", "top": canvasNowY + "px" });
+		}
+	});
+
+
 }

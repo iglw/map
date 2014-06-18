@@ -1,0 +1,71 @@
+<map>
+	<title></title>
+	<width></width>
+	<height></height>
+	<source></source>
+	<city>
+		<cityName>ASDASD</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>328</nodeX>
+		<nodeY>275</nodeY>
+		<nodeR>5</nodeR>
+		<nodeColor>#5A312A</nodeColor>
+		<labelX>328</labelX>
+		<labelY>261</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#5A312A</labelColor>
+	</city>
+	<city>
+		<cityName>New Cityd</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>538</nodeX>
+		<nodeY>205</nodeY>
+		<nodeR>5</nodeR>
+		<nodeColor>#005500</nodeColor>
+		<labelX>538</labelX>
+		<labelY>191</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#5A312A</labelColor>
+	</city>
+	<city>
+		<cityName>New City</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>669</nodeX>
+		<nodeY>229</nodeY>
+		<nodeR>5</nodeR>
+		<nodeColor>#5Affff</nodeColor>
+		<labelX>669</labelX>
+		<labelY>215</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#5A312A</labelColor>
+	</city>
+	<city>
+		<cityName>asdy</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>210</nodeX>
+		<nodeY>91</nodeY>
+		<nodeR>5</nodeR>
+		<nodeColor>#5A312A</nodeColor>
+		<labelX>210</labelX>
+		<labelY>77</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#5A312A</labelColor>
+	</city>
+	<city>
+		<cityName>New City</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>178</nodeX>
+		<nodeY>140</nodeY>
+		<nodeR>5</nodeR>
+		<nodeColor>#5A312A</nodeColor>
+		<labelX>178</labelX>
+		<labelY>126</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#5A312A</labelColor>
+	</city>
+</map>

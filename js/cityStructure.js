@@ -1,3 +1,8 @@
+// cityStructure.js
+// ---------------------------------
+// Contains everything for the city object and the switching of modes (move to cityModifier.js?)
+// City() : constructor for a city object. 
+
 // City object constructor
 function City(cName, cImg, cDesc, nX, nY, nR, nColor, lX, lY, lSize, lColor) {
 	// General attributes
@@ -132,6 +137,7 @@ var hoverOffCursor = "img/cursor_cross_eye.png";
 // 1: add
 // 2: remove
 // 3: edit
+// 4: move
 
 // This function sets the mode of the site
 function setMode(num) {
@@ -145,6 +151,10 @@ function setMode(num) {
 		case 2:
 			hoverOnCursor = "img/cursor_cross_rem_n.png";
 			hoverOffCursor = "img/cursor_cross_rem.png";
+		break;
+		case 4:
+			hoverOnCursor = "img/cursor_cross.png";
+			hoverOffCursor = "img/cursor_cross.png";
 		break;
 		default:
 			hoverOnCursor = "img/cursor_cross_eye_n.png";

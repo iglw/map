@@ -23,13 +23,14 @@ $(document).ready(function(){
 
 <body>
 
-<p id="main">
+<div id="topBar">
 <a href="#" onclick="setMode(0);">View</a> |
 <a href="#" onclick="setMode(1);">Add</a> |
 <a href="#" onclick="setMode(2);">Remove</a> | 
 <a href="#" onclick="setMode(3);">Edit</a> | 
+<a href="#" onclick="setMode(4);">Move</a> | 
 <a href="#" onclick="exportCity();">Save</a>
-</p>
+</div>
 
 <div id="editBar">
 	City Information: <br/>
@@ -100,14 +101,14 @@ TODO:
 - Mode cursors		DONE*
 - Mode buttons
 - Better edit menu
-- Fix right alignment
+- Fix right alignment	DONE
 - Confirm to remove	DONE
 - Coloured cities 	DONE
 - Better labelling 	DONE
 - Save			DONE
-- View/Edit Separation
+- Mode Separation
 - Clean form fields
-- Drag and Drop?
+- Drag and Drop		DONE
 - Keyboard shortcuts
 - Better site layout
 - New map/other maps
