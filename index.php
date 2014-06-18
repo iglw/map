@@ -24,12 +24,23 @@ $(document).ready(function(){
 <body>
 
 <div id="topBar">
-<a href="#" onclick="setMode(0);">View</a> |
-<a href="#" onclick="setMode(1);">Add</a> |
-<a href="#" onclick="setMode(2);">Remove</a> | 
-<a href="#" onclick="setMode(3);">Edit</a> | 
-<a href="#" onclick="setMode(4);">Move</a> | 
-<a href="#" onclick="exportCity();">Save</a>
+<a href="#" onclick="setMode(0);"><img class="button" id="button_eye" src="img/button_eye_n.png"></a>
+<a href="#" onclick="setMode(1);"><img class="button" id="button_add" src="img/button_add.png"></a>
+<a href="#" onclick="setMode(2);"><img class="button" id="button_rem" src="img/button_rem.png"></a> 
+<a href="#" onclick="setMode(3);"><img class="button" id="button_edit" src="img/button_edit.png"></a> 
+<a href="#"><img class="button" id="button_save" src="img/button_save.png"></a>
+
+<script>
+var buttonSave = $("#button_save");
+buttonSave.mousedown(function(event){
+		buttonSave.attr("src", "img/button_save_n.png");
+	})
+	.mouseup(function(event) {
+		buttonSave.attr("src", "img/button_save.png");
+		exportCity();
+	});
+
+</script>
 </div>
 
 <div id="editBar">
@@ -98,8 +109,8 @@ $(document).ready(function(){
 
 <pre>
 TODO:
-- Mode cursors		DONE*
-- Mode buttons
+- Mode cursors		DONE
+- Mode buttons		DONE
 - Better edit menu
 - Fix right alignment	DONE
 - Confirm to remove	DONE

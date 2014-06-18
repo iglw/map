@@ -68,4 +68,82 @@
 		<labelSize>12</labelSize>
 		<labelColor>#5A312A</labelColor>
 	</city>
+	<city>
+		<cityName>New City</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>380</nodeX>
+		<nodeY>155</nodeY>
+		<nodeR>5</nodeR>
+		<nodeColor>#5A312A</nodeColor>
+		<labelX>380</labelX>
+		<labelY>141</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#5A312A</labelColor>
+	</city>
+	<city>
+		<cityName>New City</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>490</nodeX>
+		<nodeY>160</nodeY>
+		<nodeR>5</nodeR>
+		<nodeColor>#5A312A</nodeColor>
+		<labelX>490</labelX>
+		<labelY>146</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#5A312A</labelColor>
+	</city>
+	<city>
+		<cityName>New City</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>754</nodeX>
+		<nodeY>168</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#5A312A</nodeColor>
+		<labelX>754</labelX>
+		<labelY>154</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#5A312A</labelColor>
+	</city>
+	<city>
+		<cityName>New City</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>771</nodeX>
+		<nodeY>195</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#5A312A</nodeColor>
+		<labelX>771</labelX>
+		<labelY>181</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#5A312A</labelColor>
+	</city>
+	<city>
+		<cityName>New City</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>775</nodeX>
+		<nodeY>232</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#5A312A</nodeColor>
+		<labelX>775</labelX>
+		<labelY>218</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#5A312A</labelColor>
+	</city>
+	<city>
+		<cityName>New City</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>877</nodeX>
+		<nodeY>190</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#5A312A</nodeColor>
+		<labelX>877</labelX>
+		<labelY>176</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#5A312A</labelColor>
+	</city>
 </map>

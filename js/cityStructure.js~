@@ -154,7 +154,6 @@ function clearMode() {
 }
 
 // This function sets the mode of the site
-// requires papercanvas to be defined
 function setMode(num) {
 	mode = num;
 	clearMode();

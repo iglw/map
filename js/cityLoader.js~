@@ -113,12 +113,11 @@ function exportCity() {
 // moved with the cursor.
 
 function initCanvas() {
-
+	setMode(MODE_VIEW);
 	// Create the canvas
 	paper = Raphael(0, 70, 1337, 723);
 	base = paper.image("img/map_base.png", 0, 0, 1337, 723);
 	paperCanvas = $(paper.canvas)
-	setMode(MODE_VIEW);
 
 	// When you click on it, add a city and display it
 	base.click(function(event) {
