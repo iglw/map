@@ -3,6 +3,7 @@
 // Load the city's info onto the editing panel
 
 function loadCityInfo(cityObj) {
+	showPanel();
 	$("#cityNameEd").val(cityObj.cName)
 		.focus()
 		.select();
@@ -18,7 +19,6 @@ function loadCityInfo(cityObj) {
 	$("#labelYEd").val(cityObj.label.attr("y"));
 	$("#labelSizeEd").val(cityObj.label.attr("font-size"));
 	$("#labelColorEd").val(cityObj.label.attr("fill"));
-	showPanel();
 }
 
 

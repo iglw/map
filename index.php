@@ -99,9 +99,9 @@ buttonSave.mousedown(function(event){
 			<div style="margin: 15 0 0 -200;">Description:</div>
 			<textarea id="cityDescEd"></textarea>
 		  <br/>
-		<button onclick="removeCityEditBar();">Remove</button>
-		<button onclick="clearCityInfo();">Clear</button>
-		<button onclick="hidePanel();">Hide</button>
+		<button type="button" onclick="removeCityEditBar();">Remove</button>
+		<button type="button" onclick="clearCityInfo();">Clear</button>
+		<button type="button" onclick="hidePanel();">Hide</button>
 
 		<script>
 		
