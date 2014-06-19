@@ -41,6 +41,14 @@ buttonSave.mousedown(function(event){
 	});
 
 </script>
+
+<span style="
+    float: right;
+    padding-right: 39px;
+    font-size: 45;
+">Cartomancer</span>
+
+
 </div>
 
 <div id="editBar">
@@ -109,20 +117,15 @@ buttonSave.mousedown(function(event){
 
 <pre>
 TODO:
-- Mode cursors		DONE
-- Mode buttons		DONE
-- Better edit menu
-- Fix right alignment	DONE
-- Confirm to remove	DONE
-- Coloured cities 	DONE
-- Better labelling 	DONE
-- Save			DONE
-- Mode Separation
+- Clean edit menu
+- View Mode
 - Clean form fields
-- Drag and Drop		DONE
 - Keyboard shortcuts
-- Better site layout
+
+FUTURE
+- Better site layout?
 - New map/other maps
+- City categories
 
 </pre>
 
