@@ -52,25 +52,71 @@ buttonSave.mousedown(function(event){
 </div>
 
 <div id="editBar">
-	City Information: <br/>
 	<form id="editForm">
-		City Name: 	<input type="text" id="cityNameEd"></input><br/>
-		Image:  	<input type="text" id="cityImgEd"></input><br/>
-		Description:  	<input type="text" id="cityDescEd"></input></span><br/>
+		<div style="margin: 0 0 0 0; font-weight: bold; font-size: 20;">
+			Edit City Info
+		</div>
+		<label for="cityNameEd">City Name: 	</label>
+			<input type="text" id="cityNameEd"></input><br/>
+		<label for="cityImgEd">Image:</label>
+			<input type="text" id="cityImgEd"></input><br/>
 		<br/>
-		Dot X:  	<input type="number" id="nodeXEd"></input><br/>
-		Dot Y:  	<input type="number" id="nodeYEd"></input><br/>
-		Dot Size:  	<input type="number" id="nodeREd"></input></span><br/>
-		Dot Colour:  	<input type="text" id="nodeColorEd"></input></span><br/>
+		<label for="nodeXEd">Dot X:</label>
+		  	<input type="number" id="nodeXEd"></input><br/>
+		<label for="nodeYEd">Dot Y::</label>
+		  	<input type="number" id="nodeYEd"></input><br/>
+		<label for="nodeREd">Dot Size:</label>
+		  	<input type="number" id="nodeREd"></input><br/>
+		<label for="nodeColorEd">Dot Colour:</label>
+		  	<input type="text" id="nodeColorEd"></input><br/>
+		<?php
+			$colors = array("ff0000", "b20000", "7f0000", "4c0000", "ffa500", "b27300", "4c3100", "ffff00", "7f7f00", "008000", "005900", "003300", "0000ff", "000099", "800080", "590059", "000000", "FFFFFF");
+			echo "<div style=\"padding:10px;\">\n";
+			foreach ($colors as  $color) {
+				echo "\t\t\t<div onclick=\"nodeColor('#".$color."');\" class=\"colorSwatch\" style=\"background:#".$color.";\"></div>\n";
+			}
+			echo "\t\t</div>\n";
+		?>
 		<br/>
-		Label X:  	<input type="number" id="labelXEd"></input><br/>
-		Label Y:  	<input type="number" id="labelYEd"></input><br/>
-		Label Size:  	<input type="number" id="labelSizeEd"></input><br/>	
-		Label Colour:  	<input type="text" id="labelColorEd"></input><br/>	
-
-		<a href="#" onclick="removeCity(selected);">Remove</a>
+		<br/>
+		<label for="labelXEd">Label X:</label>
+		  	<input type="number" id="labelXEd"></input><br/>
+		<label for="labelYEd">Label Y:</label>
+		  	<input type="number" id="labelYEd"></input><br/>
+		<label for="labelSizeEd">Label Size:</label>
+		  	<input type="number" id="labelSizeEd"></input><br/>	
+		<label for="labelColorEd">Label Colour:</label>
+		  	<input type="text" id="labelColorEd"></input><br/>
+		
+		<?php
+			echo "<div style=\"padding:10px;\">\n";
+			foreach ($colors as  $color) {
+				echo "\t\t\t<div onclick=\"labelColor('#".$color."');\" class=\"colorSwatch\" style=\"background:#".$color.";\"></div>\n";
+			}
+			echo "\t\t</div>\n";
+		?>
+		<br/>
+			<div style="margin: 15 0 0 -200;">Description:</div>
+			<textarea id="cityDescEd"></textarea>
+		  <br/>
+		<button onclick="removeCityEditBar();">Remove</button>
+		<button onclick="clearCityInfo();">Clear</button>
+		<button onclick="hidePanel();">Hide</button>
 
 		<script>
+		
+			function removeCityEditBar() {
+				if(confirm("Are you sure you want to remove \""+selected.cName+"\"?"))
+					removeCity(selected);
+			}
+			function nodeColor(color) {
+				$("#nodeColorEd").val(color).change();
+			}
+			function labelColor(color) {
+				$("#labelColorEd").val(color).change();
+			}
+		
+		
 			$("#cityNameEd").change(function(event) {
 				selected.changeLabel("text", $("#cityNameEd").val());
 				selected.cName = $("#cityNameEd").val();
@@ -109,15 +155,15 @@ buttonSave.mousedown(function(event){
 				selected.changeLabel("fill", $("#labelColorEd").val());
 			});
 
-
+			
+			
 		</script>
 
 
 	</form>
-
+<!--
 <pre>
 TODO:
-- Clean edit menu
 - View Mode
 - Clean form fields
 - Keyboard shortcuts
@@ -126,8 +172,11 @@ FUTURE
 - Better site layout?
 - New map/other maps
 - City categories
+- Fix Dragging: Text Selection, Drag off canvas
+- Fix: Prevent Size 0/0 cities
 
 </pre>
+-->
 
 </div>
 

@@ -17,7 +17,7 @@
 		<labelColor>#5A312A</labelColor>
 	</city>
 	<city>
-		<cityName>New Cityd</cityName>
+		<cityName>Piza</cityName>
 		<cityImg>default.png</cityImg>
 		<cityDesc>This is a new city.</cityDesc>
 		<nodeX>538</nodeX>
@@ -30,7 +30,7 @@
 		<labelColor>#5A312A</labelColor>
 	</city>
 	<city>
-		<cityName>New City</cityName>
+		<cityName>Ironic</cityName>
 		<cityImg>default.png</cityImg>
 		<cityDesc>This is a new city.</cityDesc>
 		<nodeX>669</nodeX>
@@ -40,7 +40,7 @@
 		<labelX>669</labelX>
 		<labelY>215</labelY>
 		<labelSize>12</labelSize>
-		<labelColor>#5A312A</labelColor>
+		<labelColor>#ffa500</labelColor>
 	</city>
 	<city>
 		<cityName>asdy</cityName>
@@ -56,7 +56,7 @@
 		<labelColor>#5A312A</labelColor>
 	</city>
 	<city>
-		<cityName>New City</cityName>
+		<cityName>Archin Hall</cityName>
 		<cityImg>default.png</cityImg>
 		<cityDesc>This is a new city.</cityDesc>
 		<nodeX>178</nodeX>
@@ -69,7 +69,7 @@
 		<labelColor>#5A312A</labelColor>
 	</city>
 	<city>
-		<cityName>New City</cityName>
+		<cityName>Torus</cityName>
 		<cityImg>default.png</cityImg>
 		<cityDesc>This is a new city.</cityDesc>
 		<nodeX>380</nodeX>
@@ -108,30 +108,30 @@
 		<labelColor>#5A312A</labelColor>
 	</city>
 	<city>
-		<cityName>New City</cityName>
+		<cityName>Mapleview</cityName>
 		<cityImg>default.png</cityImg>
 		<cityDesc>This is a new city.</cityDesc>
 		<nodeX>771</nodeX>
 		<nodeY>195</nodeY>
 		<nodeR>4</nodeR>
-		<nodeColor>#5A312A</nodeColor>
+		<nodeColor>#b20000</nodeColor>
 		<labelX>771</labelX>
 		<labelY>181</labelY>
 		<labelSize>12</labelSize>
-		<labelColor>#5A312A</labelColor>
+		<labelColor>#b20000</labelColor>
 	</city>
 	<city>
-		<cityName>New City</cityName>
+		<cityName>Jesusland</cityName>
 		<cityImg>default.png</cityImg>
 		<cityDesc>This is a new city.</cityDesc>
 		<nodeX>775</nodeX>
 		<nodeY>232</nodeY>
 		<nodeR>4</nodeR>
-		<nodeColor>#5A312A</nodeColor>
+		<nodeColor>#005900</nodeColor>
 		<labelX>775</labelX>
 		<labelY>218</labelY>
 		<labelSize>12</labelSize>
-		<labelColor>#5A312A</labelColor>
+		<labelColor>#ffff00</labelColor>
 	</city>
 	<city>
 		<cityName>New City</cityName>
@@ -143,6 +143,110 @@
 		<nodeColor>#5A312A</nodeColor>
 		<labelX>877</labelX>
 		<labelY>176</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#5A312A</labelColor>
+	</city>
+	<city>
+		<cityName>New City</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>987</nodeX>
+		<nodeY>157</nodeY>
+		<nodeR>5</nodeR>
+		<nodeColor>#b27300</nodeColor>
+		<labelX>987</labelX>
+		<labelY>143</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#000099</labelColor>
+	</city>
+	<city>
+		<cityName>New City</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>974</nodeX>
+		<nodeY>248</nodeY>
+		<nodeR>5</nodeR>
+		<nodeColor>#0000ff</nodeColor>
+		<labelX>974</labelX>
+		<labelY>234</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#008000</labelColor>
+	</city>
+	<city>
+		<cityName>New City</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>1164</nodeX>
+		<nodeY>263</nodeY>
+		<nodeR>5</nodeR>
+		<nodeColor>#7f0000</nodeColor>
+		<labelX>1164</labelX>
+		<labelY>249</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#7f7f00</labelColor>
+	</city>
+	<city>
+		<cityName>New City</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>1201</nodeX>
+		<nodeY>354</nodeY>
+		<nodeR>5</nodeR>
+		<nodeColor>#800080</nodeColor>
+		<labelX>1201</labelX>
+		<labelY>340</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#4c0000</labelColor>
+	</city>
+	<city>
+		<cityName>Girraffe</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>955</nodeX>
+		<nodeY>350</nodeY>
+		<nodeR>5</nodeR>
+		<nodeColor>#800080</nodeColor>
+		<labelX>955</labelX>
+		<labelY>336</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#ffa500</labelColor>
+	</city>
+	<city>
+		<cityName>Fity Meter Heights</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>564</nodeX>
+		<nodeY>336</nodeY>
+		<nodeR>5</nodeR>
+		<nodeColor>#4c0000</nodeColor>
+		<labelX>564</labelX>
+		<labelY>322</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#5A312A</labelColor>
+	</city>
+	<city>
+		<cityName>Jubillee Square</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>824</nodeX>
+		<nodeY>401</nodeY>
+		<nodeR>5</nodeR>
+		<nodeColor>#7f7f00</nodeColor>
+		<labelX>824</labelX>
+		<labelY>387</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#0000ff</labelColor>
+	</city>
+	<city>
+		<cityName>New City</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>74</nodeX>
+		<nodeY>204</nodeY>
+		<nodeR>5</nodeR>
+		<nodeColor>#5A312A</nodeColor>
+		<labelX>74</labelX>
+		<labelY>190</labelY>
 		<labelSize>12</labelSize>
 		<labelColor>#5A312A</labelColor>
 	</city>

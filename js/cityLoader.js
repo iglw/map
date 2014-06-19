@@ -58,7 +58,7 @@ function loadCitiesXML() {
 					myAttr['labelSize'], myAttr['labelColor']);
 
 		}); // End loop for each city
-
+		select(null);
 	}); // End load information from XML
 }
 

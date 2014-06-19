@@ -3,7 +3,9 @@
 // Load the city's info onto the editing panel
 
 function loadCityInfo(cityObj) {
-	$("#cityNameEd").val(cityObj.cName);
+	$("#cityNameEd").val(cityObj.cName)
+		.focus()
+		.select();
 	$("#cityImgEd").val(cityObj.cImg);
 	$("#cityDescEd").val(cityObj.cDesc);
 
@@ -16,6 +18,7 @@ function loadCityInfo(cityObj) {
 	$("#labelYEd").val(cityObj.label.attr("y"));
 	$("#labelSizeEd").val(cityObj.label.attr("font-size"));
 	$("#labelColorEd").val(cityObj.label.attr("fill"));
+	showPanel();
 }
 
 
@@ -27,6 +30,13 @@ function clearCityInfo() {
 	$("#editForm").trigger("reset");
 }
 
+
+function hidePanel() {
+	$("#editBar").hide();
+}
+function showPanel() {
+	$("#editBar").show();
+}
 
 // addCity function
 // ------------------------------

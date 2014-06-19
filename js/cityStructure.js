@@ -82,7 +82,7 @@ function City(cName, cImg, cDesc, nX, nY, nR, nColor, lX, lY, lSize, lColor) {
 	// What happens when the city is clicked on
 	this.clickMe = function() {
 		
-		if (mode == MODE_REM && confirm("Are you sure?")) {
+		if (mode == MODE_REM && confirm("Are you sure you want to remove \""+cName+"\"?")) {
 			thisCity.hoverOffMe();
 			clearCityInfo();
 			removeCity(this);
