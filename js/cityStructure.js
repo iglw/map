@@ -45,7 +45,7 @@ function City(cName, cImg, cDesc, nX, nY, nR, nColor, lX, lY, lSize, lColor) {
 	// Attribue: Label
 	this.label = paper.text(lX, lY, cName)
 		.attr({ "font-size": lSize, 
-			"font-family": "bree", 
+			"font-family": "ktpetrock", 
 			"font-weight": "bold", 
 			"fill": lColor })
 		.click(function(event) {thisCity.clickMe();})
@@ -67,7 +67,7 @@ function City(cName, cImg, cDesc, nX, nY, nR, nColor, lX, lY, lSize, lColor) {
 	this.box = paper.text(lX, lY, cName)
 		.attr({ 
 			"font-size": lSize, 
-			"font-family": "bree", 
+			"font-family": "ktpetrock", 
 			"font-weight": "bold", 
 			"stroke": "#fff",
 			"stroke-width": "3",
@@ -90,7 +90,7 @@ function City(cName, cImg, cDesc, nX, nY, nR, nColor, lX, lY, lSize, lColor) {
 		this.box.attr({
 			"font-size": this.label.attr("font-size"),
 			"text": this.label.attr("text"),
-			"x": parseInt(this.label.attr("x"))+1,
+			"x": parseInt(this.label.attr("x")),
 			"y": this.label.attr("y")
 			});
 	}
@@ -112,6 +112,7 @@ function City(cName, cImg, cDesc, nX, nY, nR, nColor, lX, lY, lSize, lColor) {
 			hidePanel();
 		} else if (mode == MODE_VIEW) {
 			loadDisplay(this);
+			view(this);
 		} else {
 			loadCityInfo(this);
 			select(this);
@@ -160,7 +161,7 @@ var cityList = [],
 
 var paper, base, selected, mode, hoverOnCursor, hoverOffCursor;
 var paperCanvas;
-var mode;
+var mode, selected, viewing;
 var hoverOnCursor;
 var hoverOffCursor;
 

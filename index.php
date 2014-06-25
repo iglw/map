@@ -15,7 +15,96 @@
 $(document).ready(function(){
 	// Create canvas
 	loadCitiesXML();
-});
+	})
+	// KEYBOARD CONTROLS ----------------------------------
+	.keydown(function(event) {
+		// Exit if something is being input on the from
+		if ($('*:focus').length > 0) return; 
+		console.log("key:" + event.which + "," + $('*:focus').length);
+		keyCode = event.which;
+		// Prevent arrow key scrolling
+		event.preventDefault();
+		switch (keyCode) {		
+			// Keyboard: Mode select
+			case 49:	//1
+				setMode(0);
+			break;
+			case 50:	//2
+				setMode(1);
+			break;
+			case 51:	//3
+				setMode(2);
+			break;
+			case 52:	//4
+				setMode(3);
+			break;
+			case 53:	//5
+				exportCity();
+			break;
+		}
+		if (selected == null) {
+			// Only when nothing is selected
+		} else {
+			// Only when something is selected
+			switch(keyCode) {
+			
+				// Keyboard: Move node position
+				case 37:		//LEFT
+					selected.circle.attr("cx", parseInt(selected.circle.attr("cx")) - 1);
+					$("#nodeXEd").val(selected.circle.attr("cx"));
+				break;
+				case 38:		//UP
+					selected.circle.attr("cy", parseInt(selected.circle.attr("cy")) - 1);
+					$("#nodeYEd").val(selected.circle.attr("cy"));
+				break;
+				case 39:		//RIGHT
+					selected.circle.attr("cx", parseInt(selected.circle.attr("cx")) + 1);
+					$("#nodeXEd").val(selected.circle.attr("cx"));
+				break;
+				case 40:		//DOWN
+					selected.circle.attr("cy", parseInt(selected.circle.attr("cy")) + 1);
+					$("#nodeYEd").val(selected.circle.attr("cy"));
+				break;
+				
+				// Keyboard: Move label position
+				case 74:		//J
+					selected.changeLabel ("x", parseInt(selected.label.attr("x")) - 1);
+					$("#labelXEd").val(selected.label.attr("x"));
+				break;
+				case 73:		//I
+					selected.changeLabel ("y", parseInt(selected.label.attr("y")) - 1);
+					$("#labelYEd").val(selected.label.attr("y"));
+				break;
+				case 76:		//L
+					selected.changeLabel ("x", parseInt(selected.label.attr("x")) + 1);
+					$("#labelXEd").val(selected.label.attr("x"));
+				break;
+				case 75:		//K
+					selected.changeLabel ("y", parseInt(selected.label.attr("y")) + 1);
+					$("#labelYEd").val(selected.label.attr("y"));
+				break;
+				
+				// Dot and Font size changes
+				case 189:		//-
+					selected.circle.attr("r", parseInt(selected.circle.attr("r")) - 1);
+					$("#nodeREd").val(selected.circle.attr("r"));
+				break;
+				case 187:		//=
+					selected.circle.attr("r", parseInt(selected.circle.attr("r")) + 1);
+					$("#nodeREd").val(selected.circle.attr("r"));
+				break;				
+				case 219:		//[
+					selected.changeLabel ("font-size", parseInt(selected.label.attr("font-size")) - 1);
+					$("#labelSizeEd").val(selected.label.attr("font-size"));
+				break;
+				case 221:		//]
+					selected.changeLabel ("font-size", parseInt(selected.label.attr("font-size")) + 1);
+					$("#labelSizeEd").val(selected.label.attr("font-size"));
+				break;
+
+			}
+		}
+	});
 
 </script>
 
@@ -54,7 +143,7 @@ buttonSave.mousedown(function(event){
 <div id="displayBar">
 	<h2 id="cityNameDisplay"></h2><br/>
 	<span id="cityImgDisplay"></span><br/>
-	<div id="cityDescDisplay" style="text-align:left;"></div><br/>
+	<div id="cityDescDisplay" style="text-align:left;margin-top: 13px;"></div><br/>
 </div>
 
 <div id="editBar">
@@ -68,11 +157,11 @@ buttonSave.mousedown(function(event){
 			<input type="text" id="cityImgEd"></input><br/>
 		<br/>
 		<label for="nodeXEd">Dot X:</label>
-		  	<input type="number" id="nodeXEd"></input><br/>
+		  	<input type="text" id="nodeXEd"></input><br/>
 		<label for="nodeYEd">Dot Y::</label>
-		  	<input type="number" id="nodeYEd"></input><br/>
+		  	<input type="text" id="nodeYEd"></input><br/>
 		<label for="nodeREd">Dot Size:</label>
-		  	<input type="number" id="nodeREd"></input><br/>
+		  	<input type="text" id="nodeREd"></input><br/>
 		<label for="nodeColorEd">Dot Colour:</label>
 		  	<input type="text" id="nodeColorEd"></input><br/>
 		<?php
@@ -86,11 +175,11 @@ buttonSave.mousedown(function(event){
 		<br/>
 		<br/>
 		<label for="labelXEd">Label X:</label>
-		  	<input type="number" id="labelXEd"></input><br/>
+		  	<input type="text" id="labelXEd"></input><br/>
 		<label for="labelYEd">Label Y:</label>
-		  	<input type="number" id="labelYEd"></input><br/>
+		  	<input type="text" id="labelYEd"></input><br/>
 		<label for="labelSizeEd">Label Size:</label>
-		  	<input type="number" id="labelSizeEd"></input><br/>	
+		  	<input type="text" id="labelSizeEd"></input><br/>	
 		<label for="labelColorEd">Label Colour:</label>
 		  	<input type="text" id="labelColorEd"></input><br/>
 		
@@ -102,7 +191,7 @@ buttonSave.mousedown(function(event){
 			echo "\t\t</div>\n";
 		?>
 		<br/>
-			<div style="margin: 15 0 0 -200;">Description:</div>
+			<div style="margin: 15 0 0 38; text-align: left;">Description:</div>
 			<textarea id="cityDescEd"></textarea>
 		  <br/>
 		<button type="button" onclick="removeCityEditBar();">Remove</button>
@@ -171,9 +260,14 @@ buttonSave.mousedown(function(event){
 <!--
 <pre>
 TODO:
-- View Mode
+- View Mode				OK
 - Clean form fields
-- Keyboard shortcuts
+- Keyboard shortcuts	OK
+- Browser compatibility
+
+- Help info
+- Paths
+- 
 
 FUTURE
 - Better site layout?

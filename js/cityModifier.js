@@ -13,9 +13,9 @@ function loadDisplay(cityObj) {
 
 function loadCityInfo(cityObj) {
 	showPanel();
-	$("#cityNameEd").val(cityObj.cName)
-		.focus()
-		.select();
+	$("#cityNameEd").val(cityObj.cName);
+		//.focus()
+		//.select();
 	$("#cityImgEd").val(cityObj.cImg);
 	$("#cityDescEd").val(cityObj.cDesc);
 
@@ -47,7 +47,7 @@ function clearCityInfo() {
 
 function hidePanel() {
 	$("#editBar").hide();
-	$("#editForm").trigger("reset");
+	//$("#editForm").trigger("reset");
 	select(null);
 }
 function showPanel() {
@@ -55,6 +55,7 @@ function showPanel() {
 }
 function hideDisplay() {
 	$("#displayBar").hide();
+	view(null);
 }
 function showDisplay() {
 	$("#displayBar").show();
@@ -111,22 +112,37 @@ function setMode(num) {
 			hoverOnCursor = "img/cursor_cross_eye_n.png";
 			hoverOffCursor = "img/cursor_hand.png";
 			$("#button_eye").attr("src", "img/button_eye_n.png");
+			// If editing a city when switching over, immediately go to display panel.
+			if (selected != null) {
+				view(selected);
+				loadDisplay(viewing);
+			}
 			hidePanel();
 		break;
 		case MODE_ADD:
 			hoverOnCursor = "img/cursor_cross_edit_n.png";
 			hoverOffCursor = "img/cursor_cross_add_n.png";
 			$("#button_add").attr("src", "img/button_add_n.png");
+			hideDisplay();
+			hidePanel();
 		break;
 		case MODE_REM:
 			hoverOnCursor = "img/cursor_cross_rem_n.png";
 			hoverOffCursor = "img/cursor_cross_rem.png";
 			$("#button_rem").attr("src", "img/button_rem_n.png");
+			hideDisplay();
+			hidePanel();
 		break;
 		case MODE_EDIT:
 			hoverOnCursor = "img/cursor_cross_edit_n.png";
 			hoverOffCursor = "img/cursor_cross_edit.png";
 			$("#button_edit").attr("src", "img/button_edit_n.png");
+			// If viewing a city when switching over, immediately go to eit panel.
+			if (viewing != null) {
+				select(viewing);
+				loadCityInfo(selected);
+			}
+			hideDisplay();
 		break;
 		default:
 			hoverOnCursor = "img/cursor_cross_eye_n.png";
@@ -140,10 +156,14 @@ function setMode(num) {
 function select(cityObj) {
 	selected = cityObj;
 	if (selected != null) {
-		console.log("Selected: " + selected.cName);
+		//console.log("Selected: " + selected.cName);
 	} else {
-		console.log("Clear Selected");
+		//console.log("Clear Selected");
 	}
+}
+// This function selects the city to be the current city being modified, viewed, etc.
+function view(cityObj) {
+	viewing = cityObj;
 }
 
 

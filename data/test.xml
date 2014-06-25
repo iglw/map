@@ -1,201 +1,292 @@
 <map>
 	<title></title>
-	<width></width>
-	<height></height>
+	<width>0</width>
+	<height>0</height>
 	<source></source>
 	<city>
 		<cityName>Wolf's Hold</cityName>
 		<cityImg>default.png</cityImg>
 		<cityDesc>More a collection of a dozen war camps that entrenched for many years than a city, Wolf's Hold is the western most Northern Orc settlement. Nearly forty years past the Great Ice Wolf Korsha Eyeater gathered a number of rival tribes together and marched on the Black City. The war stalemated and with the rise of Joragath the war camps settled in to a loose city-like state. With trade to the Burning Mountain feeding them weapons, and raids on Wildforge lands for food they are about as close to a settled sustainable people as the orcs can be without stealing the city itself from another race.</cityDesc>
 		<nodeX>162</nodeX>
-		<nodeY>89</nodeY>
+		<nodeY>90</nodeY>
 		<nodeR>4</nodeR>
 		<nodeColor>#3d390b</nodeColor>
 		<labelX>162</labelX>
-		<labelY>77</labelY>
-		<labelSize>12</labelSize>
+		<labelY>76</labelY>
+		<labelSize>15</labelSize>
+		<labelColor>#3d390b</labelColor>
+	</city>
+	<city>
+		<cityName>The Burning Mountain</cityName>
+		<cityImg>http://fc04.deviantart.net/fs71/i/2011/124/2/e/muspelheim_scenic_spot_by_nightblue_art-d3fk93y.jpg</cityImg>
+		<cityDesc>There are few places in the world with larger steel working operations than the Burning Mountain, and none so open to the world. Nestled between the jagged peaks lava flows pour forth endlessly, feeding the war machine that takes up the days and nights of the dwarven city that calls this sulfurous pit home. The people of of the Burning Mountain are a hard hearted and hardy bunch who trade with the Black City and others for food, handing out weapons and armour with out a thought to who gets them.</cityDesc>
+		<nodeX>208</nodeX>
+		<nodeY>92</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>266</labelX>
+		<labelY>104</labelY>
+		<labelSize>15</labelSize>
+		<labelColor>#3d390b</labelColor>
+	</city>
+	<city>
+		<cityName>Black City</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>Black City is a large stone city built in to the hills around it, but has been burned and sacked so badly in the past that it is to this day stained. It is home to a vast population of half orc, and is one of the few city in the world to be home to both orc and men in a state of peace. The warlord ruler of the city is a half orc who has claimed to be of royal blood on both sides, few believe this claim but fewer speak of it out loud. Warlord Joragath of Two-Bloods holds a fragile peace in his hands and leaves trade open between the two peoples for now.</cityDesc>
+		<nodeX>180</nodeX>
+		<nodeY>138</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>180</labelX>
+		<labelY>124</labelY>
+		<labelSize>15</labelSize>
 		<labelColor>#3d390b</labelColor>
 	</city>
 	<city>
 		<cityName>Wildforge</cityName>
 		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>157</nodeX>
-		<nodeY>180</nodeY>
+		<cityDesc>Wildforge is the heart of the jungle tribes power. An old stone city built with aid from the dwarves it has the strength for even wildmen to have a stable empire. It is ruled by what ever tribal leader can hold power and while they are at peace with the goblin tribes, and elves, they view all others as enemies.</cityDesc>
+		<nodeX>158</nodeX>
+		<nodeY>181</nodeY>
 		<nodeR>4</nodeR>
 		<nodeColor>#3d390b</nodeColor>
-		<labelX>157</labelX>
-		<labelY>166</labelY>
-		<labelSize>12</labelSize>
-		<labelColor>#3d390b</labelColor>
-	</city>
-	<city>
-		<cityName>Cliffport</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>Both Cliffport and Iron-Shore are ruled by pirates, thugs, warlords and worse. They are 'free cities' in name alone, as most citizens are as much slaves to the strong armed tactics of the ruling class as is any bound slave of the east.</cityDesc>
-		<nodeX>127</nodeX>
-		<nodeY>261</nodeY>
-		<nodeR>4</nodeR>
-		<nodeColor>#3d390b</nodeColor>
-		<labelX>127</labelX>
-		<labelY>247</labelY>
-		<labelSize>12</labelSize>
+		<labelX>158</labelX>
+		<labelY>167</labelY>
+		<labelSize>15</labelSize>
 		<labelColor>#3d390b</labelColor>
 	</city>
 	<city>
 		<cityName>Farpeak</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>75</nodeX>
+		<cityImg>http://th07.deviantart.net/fs46/PRE/f/2009/234/4/1/Bell_tower_peak_by_arcipello.jpg</cityImg>
+		<cityDesc>Farpeak was built to prove mans power, to rule form shore to shore. Though the empire has long ago broken in to small parts and the true king is long dead, Farpeak still answers to the 'throne' in Amonarino, but has a hard time keeping from falling under it's neighbours control.</cityDesc>
+		<nodeX>74</nodeX>
 		<nodeY>202</nodeY>
 		<nodeR>4</nodeR>
 		<nodeColor>#3d390b</nodeColor>
-		<labelX>75</labelX>
-		<labelY>188</labelY>
-		<labelSize>12</labelSize>
+		<labelX>74</labelX>
+		<labelY>186</labelY>
+		<labelSize>15</labelSize>
 		<labelColor>#3d390b</labelColor>
 	</city>
 	<city>
 		<cityName>Ironshore</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>103</nodeX>
+		<cityImg>http://fc03.deviantart.net/fs70/i/2010/285/0/c/burning_ghats_by_jenovah_art-d2tlwl7.jpg</cityImg>
+		<cityDesc>Both Cliffport and Iron-Shore are ruled by pirates, thugs, warlords and worse. They are 'free cities' in name alone, as most citizens are as much slaves to the strong armed tactics of the ruling class as is any bound slave of the east.</cityDesc>
+		<nodeX>104</nodeX>
 		<nodeY>227</nodeY>
 		<nodeR>4</nodeR>
 		<nodeColor>#3d390b</nodeColor>
-		<labelX>103</labelX>
-		<labelY>214</labelY>
-		<labelSize>12</labelSize>
+		<labelX>105</labelX>
+		<labelY>213</labelY>
+		<labelSize>15</labelSize>
+		<labelColor>#3d390b</labelColor>
+	</city>
+	<city>
+		<cityName>Cliffport</cityName>
+		<cityImg>http://fc09.deviantart.net/fs39/f/2008/364/6/6/Home_at_last_____by_BenWootten.jpg</cityImg>
+		<cityDesc>Both Cliffport and Iron-Shore are ruled by pirates, thugs, warlords and worse. They are 'free cities' in name alone, as most citizens are as much slaves to the strong armed tactics of the ruling class as is any bound slave of the east.</cityDesc>
+		<nodeX>127</nodeX>
+		<nodeY>258</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>127</labelX>
+		<labelY>243</labelY>
+		<labelSize>15</labelSize>
 		<labelColor>#3d390b</labelColor>
 	</city>
 	<city>
 		<cityName>Ohshoe</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
+		<cityImg>http://fc00.deviantart.net/fs70/i/2012/111/a/6/hometown_by_arvalis-d4x24ll.jpg</cityImg>
+		<cityDesc>Built around long lost human ruins Ohshoe is a thriving halfling deep water port city. It has taken influence from Hikoto to the south, and Cliffport to the east but is still it's own city and unique in it's culture.</cityDesc>
 		<nodeX>59</nodeX>
-		<nodeY>302</nodeY>
+		<nodeY>303</nodeY>
 		<nodeR>4</nodeR>
 		<nodeColor>#3d390b</nodeColor>
 		<labelX>59</labelX>
-		<labelY>288</labelY>
-		<labelSize>12</labelSize>
+		<labelY>289</labelY>
+		<labelSize>15</labelSize>
 		<labelColor>#3d390b</labelColor>
 	</city>
 	<city>
 		<cityName>Hikoto</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
+		<cityImg>http://th06.deviantart.net/fs70/PRE/i/2012/093/8/0/temple_lagoon_by_jenovah_art-d3n0q0j.jpg</cityImg>
+		<cityDesc>To the very edge of west sits an island ruled by man. It has but a single great city, Hikoto, that is the name of the island, city and the nation that lives upon it. So long ago was it that man came to this place that none can recall the genesis of this place. The locals can only tell of the Holy Emperor born of the Sun and Moon leading his people to this land, taming the Field, Forest and Tide to feed and care for his people.</cityDesc>
 		<nodeX>71</nodeX>
-		<nodeY>491</nodeY>
+		<nodeY>489</nodeY>
 		<nodeR>4</nodeR>
 		<nodeColor>#3d390b</nodeColor>
-		<labelX>71</labelX>
-		<labelY>477</labelY>
-		<labelSize>12</labelSize>
+		<labelX>72</labelX>
+		<labelY>476</labelY>
+		<labelSize>15</labelSize>
 		<labelColor>#3d390b</labelColor>
 	</city>
 	<city>
-		<cityName>Crash Site</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>188</nodeX>
-		<nodeY>442</nodeY>
-		<nodeR>3</nodeR>
-		<nodeColor>#ff0000</nodeColor>
-		<labelX>188</labelX>
-		<labelY>428</labelY>
-		<labelSize>11</labelSize>
-		<labelColor>#ff0000</labelColor>
-	</city>
-	<city>
-		<cityName>The Burning Mountain</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>208</nodeX>
-		<nodeY>93</nodeY>
+		<cityName>Glacier Peak</cityName>
+		<cityImg>http://th05.deviantart.net/fs38/PRE/f/2008/363/e/6/Mountain_Castle_by_Hideyoshi.jpg</cityImg>
+		<cityDesc>Glacier Peak is a mighty tower of ice and no one knows who built it. The whole thing floated south from the high north one very hot summer, and the orc tribes simply moved in and took over. The tower itself was clearly for creatures not unlike the orc, although somewhat shorter.</cityDesc>
+		<nodeX>480</nodeX>
+		<nodeY>69</nodeY>
 		<nodeR>4</nodeR>
 		<nodeColor>#3d390b</nodeColor>
-		<labelX>239</labelX>
-		<labelY>105</labelY>
-		<labelSize>12</labelSize>
+		<labelX>481</labelX>
+		<labelY>56</labelY>
+		<labelSize>15</labelSize>
 		<labelColor>#3d390b</labelColor>
+	</city>
+	<city>
+		<cityName>Unnamed Elven City 3</cityName>
+		<cityImg>http://fc03.deviantart.net/fs71/i/2011/166/7/9/treehouse_village_by_juanico_el_muertes-d3iz8vk.jpg</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>234</nodeX>
+		<nodeY>534</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#b20000</nodeColor>
+		<labelX>234</labelX>
+		<labelY>520</labelY>
+		<labelSize>15</labelSize>
+		<labelColor>#b20000</labelColor>
 	</city>
 	<city>
 		<cityName>Vale of Stone</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
+		<cityImg>http://fc00.deviantart.net/fs70/i/2011/178/a/1/frost_kingdom_by_kennethfairclough-d3jkicy.jpg</cityImg>
+		<cityDesc>Not really a vale at all, the city of Vale of Stone is built around an under ground rivers exit point on the Valley of the Eldest's outer ring. It is from the Vale that all water, and as such 'life' flows. It's people are rich and prone to building towers and grand edifice that are not normally bothered with by dwarven kind.</cityDesc>
 		<nodeX>262</nodeX>
-		<nodeY>463</nodeY>
+		<nodeY>462</nodeY>
 		<nodeR>4</nodeR>
 		<nodeColor>#3d390b</nodeColor>
 		<labelX>262</labelX>
-		<labelY>449</labelY>
-		<labelSize>12</labelSize>
+		<labelY>448</labelY>
+		<labelSize>15</labelSize>
 		<labelColor>#3d390b</labelColor>
 	</city>
 	<city>
 		<cityName>Valley of the Eldest</cityName>
-		<cityImg>default.png</cityImg>
+		<cityImg>http://fc05.deviantart.net/fs48/f/2009/232/0/9/random_stuff_by_Tonyholmsten.jpg</cityImg>
 		<cityDesc>This is a new city.</cityDesc>
 		<nodeX>294</nodeX>
 		<nodeY>475</nodeY>
 		<nodeR>4</nodeR>
 		<nodeColor>#3d390b</nodeColor>
-		<labelX>294</labelX>
-		<labelY>485</labelY>
-		<labelSize>12</labelSize>
+		<labelX>259</labelX>
+		<labelY>487</labelY>
+		<labelSize>15</labelSize>
 		<labelColor>#3d390b</labelColor>
 	</city>
 	<city>
-		<cityName>Glacier Peak</cityName>
+		<cityName>Kindling</cityName>
 		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>480</nodeX>
-		<nodeY>70</nodeY>
+		<cityDesc>Once a proud elven city Kindling is now an orcish war camp formed of palace-aid walls and the ruins of the elven city of Halusum. Named as it is by the orc warlord Jkar Elfbane when he first took control of the city, meant as a jab at the defeated elven forces. Now it is the lumber capital of the badlands orcs and the heart of the war efforts northward in to the elven jungles, though it is hampered by the dwarves of the Valley of the Eldest.</cityDesc>
+		<nodeX>372</nodeX>
+		<nodeY>461</nodeY>
 		<nodeR>4</nodeR>
 		<nodeColor>#3d390b</nodeColor>
-		<labelX>480</labelX>
-		<labelY>56</labelY>
-		<labelSize>12</labelSize>
+		<labelX>372</labelX>
+		<labelY>448</labelY>
+		<labelSize>15</labelSize>
 		<labelColor>#3d390b</labelColor>
 	</city>
 	<city>
-		<cityName>The Wardens</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>381</nodeX>
-		<nodeY>157</nodeY>
+		<cityName>Selious</cityName>
+		<cityImg>http://fc00.deviantart.net/fs70/i/2011/281/4/7/elven_village_by_juanico_el_muertes-d4c7i5t.jpg</cityImg>
+		<cityDesc>To most humans and halflings Selious is a wonder to the eye, while dwarf kind think of it as foolish and could be knocked over with a breeze. The city is formed in the lush jungle, over the last edges of the Ice Mountain River, formed like a bridge and tree house high above the ground. The elves here are of the most peaceful to outsider, bare orcs. This is the main point of warfare between badlands orcs and the elven peoples. It is an odd place where elves wield much dwarf crafted steel.</cityDesc>
+		<nodeX>432</nodeX>
+		<nodeY>448</nodeY>
 		<nodeR>4</nodeR>
 		<nodeColor>#3d390b</nodeColor>
-		<labelX>381</labelX>
-		<labelY>171</labelY>
-		<labelSize>12</labelSize>
+		<labelX>432</labelX>
+		<labelY>435</labelY>
+		<labelSize>15</labelSize>
 		<labelColor>#3d390b</labelColor>
 	</city>
 	<city>
-		<cityName>Broken Heights</cityName>
+		<cityName>Dola-Thara</cityName>
 		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>427</nodeX>
-		<nodeY>155</nodeY>
+		<cityDesc>This once mighty fortress has been under siege by the badlands orcs of the south from a few hundred years. This has caused the lords of this hall to depend on trade from it's sister city, and in turn indebted them. Still, few dwarf cities are host to such a veteran force of warriors as there is no shortage of foes to face, and motivation to face them.</cityDesc>
+		<nodeX>499</nodeX>
+		<nodeY>460</nodeY>
 		<nodeR>4</nodeR>
 		<nodeColor>#3d390b</nodeColor>
-		<labelX>427</labelX>
-		<labelY>141</labelY>
-		<labelSize>12</labelSize>
+		<labelX>499</labelX>
+		<labelY>446</labelY>
+		<labelSize>15</labelSize>
 		<labelColor>#3d390b</labelColor>
 	</city>
 	<city>
-		<cityName>Last Hold</cityName>
+		<cityName>Ika-Thara</cityName>
 		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>508</nodeX>
-		<nodeY>138</nodeY>
+		<cityDesc>While better off than it's sister city Dola-Thara, Ika-Thara is still plauged by the badlands orcs, and also the southern jungle goblins. The strain of feeding themselves and their kin in the north have forced the people of Ika-Thara to form a shaky alliance with the elves of Selious. The city itself is well guarded, and while not rich, it does not lack for mineral wealth.</cityDesc>
+		<nodeX>459</nodeX>
+		<nodeY>473</nodeY>
 		<nodeR>4</nodeR>
 		<nodeColor>#3d390b</nodeColor>
-		<labelX>508</labelX>
-		<labelY>124</labelY>
+		<labelX>461</labelX>
+		<labelY>489</labelY>
+		<labelSize>15</labelSize>
+		<labelColor>#3d390b</labelColor>
+	</city>
+	<city>
+		<cityName>River's End</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This small mostly human/halfling outpost is mob run, and known for it's drug trade, but it is also one of the few settlements in the area to welcome all races and keep the peace.</cityDesc>
+		<nodeX>273</nodeX>
+		<nodeY>388</nodeY>
+		<nodeR>3</nodeR>
+		<nodeColor>#ff0000</nodeColor>
+		<labelX>273</labelX>
+		<labelY>375</labelY>
 		<labelSize>12</labelSize>
+		<labelColor>#b20000</labelColor>
+	</city>
+	<city>
+		<cityName>Jungle Outpost</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This small outpost is a walled riverside village, home to only three dozen people 90% of the time.</cityDesc>
+		<nodeX>196</nodeX>
+		<nodeY>404</nodeY>
+		<nodeR>3</nodeR>
+		<nodeColor>#ff0000</nodeColor>
+		<labelX>196</labelX>
+		<labelY>392</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#b20000</labelColor>
+	</city>
+	<city>
+		<cityName>Barrow Den</cityName>
+		<cityImg>http://th09.deviantart.net/fs48/PRE/f/2009/231/a/6/Waterfall_Doorway_by_arcipello.jpg</cityImg>
+		<cityDesc>Not a true Thanedom, the Barrow Den is a home forged by dozens of small clan-less families over 600 years ago. Together they carved out a new home in the quite out of the way mountains and here they have formed a new clan, and a new name. Few dwarven clans, cities or thanes care for Barrow Den, as it spits in the face of tradition and history. As such the people of this city stick to themselves and rarely deal with any outsiders, even to trade.</cityDesc>
+		<nodeX>226</nodeX>
+		<nodeY>366</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>230</labelX>
+		<labelY>352</labelY>
+		<labelSize>15</labelSize>
+		<labelColor>#3d390b</labelColor>
+	</city>
+	<city>
+		<cityName>Unnamed Elven City</cityName>
+		<cityImg>http://th06.deviantart.net/fs71/PRE/i/2012/048/a/6/elf_city_commission_by_gamefan84-d4q09pe.jpg</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>297</nodeX>
+		<nodeY>299</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#b20000</nodeColor>
+		<labelX>299</labelX>
+		<labelY>286</labelY>
+		<labelSize>15</labelSize>
+		<labelColor>#b20000</labelColor>
+	</city>
+	<city>
+		<cityName>Blackwater</cityName>
+		<cityImg>http://fc09.deviantart.net/fs70/i/2011/110/4/3/blackwater_bayou_by_ultrablu3-d3efztx.png</cityImg>
+		<cityDesc>A large halfling city, home to many tribes of local swamp bred halflings Black-Water is a peaceful riverside city. It is odd in that of all places this backwater that does not even have steel, is lit by gas lamps.</cityDesc>
+		<nodeX>377</nodeX>
+		<nodeY>352</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>377</labelX>
+		<labelY>339</labelY>
+		<labelSize>15</labelSize>
 		<labelColor>#3d390b</labelColor>
 	</city>
 </map>

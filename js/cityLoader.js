@@ -122,11 +122,11 @@ function initCanvas() {
 
 	// When you click on it, add a city and display it
 	base.click(function(event) {
-		if (mode==1) {
+		if (mode==MODE_ADD) {
 			var x = event.pageX - parseInt(paperCanvas.css("left"));
 			var y = event.pageY - parseInt(paperCanvas.css("top"));
 			loadCityInfo(addCity("New City", "default.png", "This is a new city.", 
-						x, y, 4, "#3d390b", x, y-14, 12, "#3d390b"));
+						x, y, 4, "#3d390b", x, y-14, 15, "#3d390b"));
 		}
 	
 	});
