@@ -126,7 +126,7 @@ function initCanvas() {
 			var x = event.pageX - parseInt(paperCanvas.css("left"));
 			var y = event.pageY - parseInt(paperCanvas.css("top"));
 			loadCityInfo(addCity("New City", "default.png", "This is a new city.", 
-						x, y, 5, "#5A312A", x, y-14, 12, "#5A312A"));
+						x, y, 4, "#3d390b", x, y-14, 12, "#3d390b"));
 		}
 	
 	});
@@ -151,6 +151,7 @@ function initCanvas() {
 	// Dragging: mouse down
 	base.mousedown(function(event) {
 		if (mode != MODE_DRAG) return;
+		if (event.preventDefault) event.preventDefault();
 		// Dragging, starting values
 		dragging = true;
 		paperCanvas.css("cursor", "url('img/cursor_hand_n.png') 13 13, default");

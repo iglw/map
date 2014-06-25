@@ -4,250 +4,198 @@
 	<height></height>
 	<source></source>
 	<city>
-		<cityName>ASDASD</cityName>
+		<cityName>Wolf's Hold</cityName>
 		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>328</nodeX>
-		<nodeY>275</nodeY>
-		<nodeR>5</nodeR>
-		<nodeColor>#5A312A</nodeColor>
-		<labelX>328</labelX>
-		<labelY>261</labelY>
-		<labelSize>12</labelSize>
-		<labelColor>#5A312A</labelColor>
-	</city>
-	<city>
-		<cityName>Piza</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>538</nodeX>
-		<nodeY>205</nodeY>
-		<nodeR>5</nodeR>
-		<nodeColor>#005500</nodeColor>
-		<labelX>538</labelX>
-		<labelY>191</labelY>
-		<labelSize>12</labelSize>
-		<labelColor>#5A312A</labelColor>
-	</city>
-	<city>
-		<cityName>Ironic</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>669</nodeX>
-		<nodeY>229</nodeY>
-		<nodeR>5</nodeR>
-		<nodeColor>#5Affff</nodeColor>
-		<labelX>669</labelX>
-		<labelY>215</labelY>
-		<labelSize>12</labelSize>
-		<labelColor>#ffa500</labelColor>
-	</city>
-	<city>
-		<cityName>asdy</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>210</nodeX>
-		<nodeY>91</nodeY>
-		<nodeR>5</nodeR>
-		<nodeColor>#5A312A</nodeColor>
-		<labelX>210</labelX>
+		<cityDesc>More a collection of a dozen war camps that entrenched for many years than a city, Wolf's Hold is the western most Northern Orc settlement. Nearly forty years past the Great Ice Wolf Korsha Eyeater gathered a number of rival tribes together and marched on the Black City. The war stalemated and with the rise of Joragath the war camps settled in to a loose city-like state. With trade to the Burning Mountain feeding them weapons, and raids on Wildforge lands for food they are about as close to a settled sustainable people as the orcs can be without stealing the city itself from another race.</cityDesc>
+		<nodeX>162</nodeX>
+		<nodeY>89</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>162</labelX>
 		<labelY>77</labelY>
 		<labelSize>12</labelSize>
-		<labelColor>#5A312A</labelColor>
+		<labelColor>#3d390b</labelColor>
 	</city>
 	<city>
-		<cityName>Archin Hall</cityName>
+		<cityName>Wildforge</cityName>
 		<cityImg>default.png</cityImg>
 		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>178</nodeX>
-		<nodeY>140</nodeY>
-		<nodeR>5</nodeR>
-		<nodeColor>#5A312A</nodeColor>
-		<labelX>178</labelX>
-		<labelY>126</labelY>
+		<nodeX>157</nodeX>
+		<nodeY>180</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>157</labelX>
+		<labelY>166</labelY>
 		<labelSize>12</labelSize>
-		<labelColor>#5A312A</labelColor>
+		<labelColor>#3d390b</labelColor>
 	</city>
 	<city>
-		<cityName>Torus</cityName>
+		<cityName>Cliffport</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>Both Cliffport and Iron-Shore are ruled by pirates, thugs, warlords and worse. They are 'free cities' in name alone, as most citizens are as much slaves to the strong armed tactics of the ruling class as is any bound slave of the east.</cityDesc>
+		<nodeX>127</nodeX>
+		<nodeY>261</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>127</labelX>
+		<labelY>247</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#3d390b</labelColor>
+	</city>
+	<city>
+		<cityName>Farpeak</cityName>
 		<cityImg>default.png</cityImg>
 		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>380</nodeX>
+		<nodeX>75</nodeX>
+		<nodeY>202</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>75</labelX>
+		<labelY>188</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#3d390b</labelColor>
+	</city>
+	<city>
+		<cityName>Ironshore</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>103</nodeX>
+		<nodeY>227</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>103</labelX>
+		<labelY>214</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#3d390b</labelColor>
+	</city>
+	<city>
+		<cityName>Ohshoe</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>59</nodeX>
+		<nodeY>302</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>59</labelX>
+		<labelY>288</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#3d390b</labelColor>
+	</city>
+	<city>
+		<cityName>Hikoto</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>71</nodeX>
+		<nodeY>491</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>71</labelX>
+		<labelY>477</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#3d390b</labelColor>
+	</city>
+	<city>
+		<cityName>Crash Site</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>188</nodeX>
+		<nodeY>442</nodeY>
+		<nodeR>3</nodeR>
+		<nodeColor>#ff0000</nodeColor>
+		<labelX>188</labelX>
+		<labelY>428</labelY>
+		<labelSize>11</labelSize>
+		<labelColor>#ff0000</labelColor>
+	</city>
+	<city>
+		<cityName>The Burning Mountain</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>208</nodeX>
+		<nodeY>93</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>239</labelX>
+		<labelY>105</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#3d390b</labelColor>
+	</city>
+	<city>
+		<cityName>Vale of Stone</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>262</nodeX>
+		<nodeY>463</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>262</labelX>
+		<labelY>449</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#3d390b</labelColor>
+	</city>
+	<city>
+		<cityName>Valley of the Eldest</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>294</nodeX>
+		<nodeY>475</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>294</labelX>
+		<labelY>485</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#3d390b</labelColor>
+	</city>
+	<city>
+		<cityName>Glacier Peak</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>480</nodeX>
+		<nodeY>70</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>480</labelX>
+		<labelY>56</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#3d390b</labelColor>
+	</city>
+	<city>
+		<cityName>The Wardens</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>381</nodeX>
+		<nodeY>157</nodeY>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>381</labelX>
+		<labelY>171</labelY>
+		<labelSize>12</labelSize>
+		<labelColor>#3d390b</labelColor>
+	</city>
+	<city>
+		<cityName>Broken Heights</cityName>
+		<cityImg>default.png</cityImg>
+		<cityDesc>This is a new city.</cityDesc>
+		<nodeX>427</nodeX>
 		<nodeY>155</nodeY>
-		<nodeR>5</nodeR>
-		<nodeColor>#5A312A</nodeColor>
-		<labelX>380</labelX>
+		<nodeR>4</nodeR>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>427</labelX>
 		<labelY>141</labelY>
 		<labelSize>12</labelSize>
-		<labelColor>#5A312A</labelColor>
+		<labelColor>#3d390b</labelColor>
 	</city>
 	<city>
-		<cityName>New City</cityName>
+		<cityName>Last Hold</cityName>
 		<cityImg>default.png</cityImg>
 		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>490</nodeX>
-		<nodeY>160</nodeY>
-		<nodeR>5</nodeR>
-		<nodeColor>#5A312A</nodeColor>
-		<labelX>490</labelX>
-		<labelY>146</labelY>
-		<labelSize>12</labelSize>
-		<labelColor>#5A312A</labelColor>
-	</city>
-	<city>
-		<cityName>New City</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>754</nodeX>
-		<nodeY>168</nodeY>
+		<nodeX>508</nodeX>
+		<nodeY>138</nodeY>
 		<nodeR>4</nodeR>
-		<nodeColor>#5A312A</nodeColor>
-		<labelX>754</labelX>
-		<labelY>154</labelY>
+		<nodeColor>#3d390b</nodeColor>
+		<labelX>508</labelX>
+		<labelY>124</labelY>
 		<labelSize>12</labelSize>
-		<labelColor>#5A312A</labelColor>
-	</city>
-	<city>
-		<cityName>Mapleview</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>771</nodeX>
-		<nodeY>195</nodeY>
-		<nodeR>4</nodeR>
-		<nodeColor>#b20000</nodeColor>
-		<labelX>771</labelX>
-		<labelY>181</labelY>
-		<labelSize>12</labelSize>
-		<labelColor>#b20000</labelColor>
-	</city>
-	<city>
-		<cityName>Jesusland</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>775</nodeX>
-		<nodeY>232</nodeY>
-		<nodeR>4</nodeR>
-		<nodeColor>#005900</nodeColor>
-		<labelX>775</labelX>
-		<labelY>218</labelY>
-		<labelSize>12</labelSize>
-		<labelColor>#ffff00</labelColor>
-	</city>
-	<city>
-		<cityName>New City</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>877</nodeX>
-		<nodeY>190</nodeY>
-		<nodeR>4</nodeR>
-		<nodeColor>#5A312A</nodeColor>
-		<labelX>877</labelX>
-		<labelY>176</labelY>
-		<labelSize>12</labelSize>
-		<labelColor>#5A312A</labelColor>
-	</city>
-	<city>
-		<cityName>New City</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>987</nodeX>
-		<nodeY>157</nodeY>
-		<nodeR>5</nodeR>
-		<nodeColor>#b27300</nodeColor>
-		<labelX>987</labelX>
-		<labelY>143</labelY>
-		<labelSize>12</labelSize>
-		<labelColor>#000099</labelColor>
-	</city>
-	<city>
-		<cityName>New City</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>974</nodeX>
-		<nodeY>248</nodeY>
-		<nodeR>5</nodeR>
-		<nodeColor>#0000ff</nodeColor>
-		<labelX>974</labelX>
-		<labelY>234</labelY>
-		<labelSize>12</labelSize>
-		<labelColor>#008000</labelColor>
-	</city>
-	<city>
-		<cityName>New City</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>1164</nodeX>
-		<nodeY>263</nodeY>
-		<nodeR>5</nodeR>
-		<nodeColor>#7f0000</nodeColor>
-		<labelX>1164</labelX>
-		<labelY>249</labelY>
-		<labelSize>12</labelSize>
-		<labelColor>#7f7f00</labelColor>
-	</city>
-	<city>
-		<cityName>New City</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>1201</nodeX>
-		<nodeY>354</nodeY>
-		<nodeR>5</nodeR>
-		<nodeColor>#800080</nodeColor>
-		<labelX>1201</labelX>
-		<labelY>340</labelY>
-		<labelSize>12</labelSize>
-		<labelColor>#4c0000</labelColor>
-	</city>
-	<city>
-		<cityName>Girraffe</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>955</nodeX>
-		<nodeY>350</nodeY>
-		<nodeR>5</nodeR>
-		<nodeColor>#800080</nodeColor>
-		<labelX>955</labelX>
-		<labelY>336</labelY>
-		<labelSize>12</labelSize>
-		<labelColor>#ffa500</labelColor>
-	</city>
-	<city>
-		<cityName>Fity Meter Heights</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>564</nodeX>
-		<nodeY>336</nodeY>
-		<nodeR>5</nodeR>
-		<nodeColor>#4c0000</nodeColor>
-		<labelX>564</labelX>
-		<labelY>322</labelY>
-		<labelSize>12</labelSize>
-		<labelColor>#5A312A</labelColor>
-	</city>
-	<city>
-		<cityName>Jubillee Square</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>824</nodeX>
-		<nodeY>401</nodeY>
-		<nodeR>5</nodeR>
-		<nodeColor>#7f7f00</nodeColor>
-		<labelX>824</labelX>
-		<labelY>387</labelY>
-		<labelSize>12</labelSize>
-		<labelColor>#0000ff</labelColor>
-	</city>
-	<city>
-		<cityName>New City</cityName>
-		<cityImg>default.png</cityImg>
-		<cityDesc>This is a new city.</cityDesc>
-		<nodeX>74</nodeX>
-		<nodeY>204</nodeY>
-		<nodeR>5</nodeR>
-		<nodeColor>#5A312A</nodeColor>
-		<labelX>74</labelX>
-		<labelY>190</labelY>
-		<labelSize>12</labelSize>
-		<labelColor>#5A312A</labelColor>
+		<labelColor>#3d390b</labelColor>
 	</city>
 </map>

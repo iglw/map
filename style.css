@@ -19,6 +19,35 @@ a {
 	/*color: rgb(255, 255, 255);*/
 }
 
+#displayBar {
+	/*z-index: 100;
+	position: relative;
+	top: 200px;
+	left: 400px;
+	width: 500px;
+	height: 300px;
+	background-color: #889988;*/
+	background: #DDDCCE;
+	z-index: 100;
+	display: none;
+	padding: 25px;
+	width: 350px;
+	position: fixed;
+	right: 0px;
+	top: 70px;
+	height: 100%;
+	box-shadow: 3px 3px 5px 6px #493131;
+	text-align: center;
+}
+
+#displayBar h2 {
+	text-decoration: underline;
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 2.0em;
+}
+
 #editBar {
 	background: #DDDCCE;
 	z-index: 100;

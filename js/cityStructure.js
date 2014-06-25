@@ -54,7 +54,7 @@ function City(cName, cImg, cDesc, nX, nY, nR, nColor, lX, lY, lSize, lColor) {
 
 	// Attribue: Box
 	// Set the box to be behind the label and perfectly sized to it
-	this.box = paper.rect(50, 50, 50, 50, 5) // Dummy values, update using function
+	/*this.box = paper.rect(50, 50, 50, 50, 5) // Dummy values, update using function
 		.attr({ "fill": "#FFFFFF", 
 			"stroke": "#ffffff", 
 			"stroke-width": "1.3",
@@ -62,16 +62,37 @@ function City(cName, cImg, cDesc, nX, nY, nR, nColor, lX, lY, lSize, lColor) {
 			"stroke-width": "0"})
 		.click(function(event) {thisCity.clickMe();})
 		.hover(function(event) {thisCity.hoverOnMe();},
+			function(event) {thisCity.hoverOffMe();});*/
+			
+	this.box = paper.text(lX, lY, cName)
+		.attr({ 
+			"font-size": lSize, 
+			"font-family": "bree", 
+			"font-weight": "bold", 
+			"stroke": "#fff",
+			"stroke-width": "3",
+			"fill": lColor 
+			})
+		.click(function(event) {thisCity.clickMe();})
+		.hover(function(event) {thisCity.hoverOnMe();},
 			function(event) {thisCity.hoverOffMe();});
 
 	// Function to update bounding box
 	this.updateBox = function() {
-		var xoffset = this.label.getBBox().width/2;
-		var yoffset = this.label.getBBox().height/3;
-		this.box.attr({"x": this.label.attr("x")-xoffset-2,
-			"y": this.label.attr("y")-yoffset,
-			"width": this.label.getBBox().width+4,
-			"height": this.label.getBBox().height*0.85});
+		//var labelWidth = this.label.getBBox().width;
+		//var labelHeight = this.label.getBBox().height;
+		//var xoffset = Math.floor(labelWidth/2);
+		//var yoffset = Math.floor(labelHeight/3);
+		//this.box.attr({"x": this.label.attr("x")-xoffset-4,
+			//"y": this.label.attr("y")-yoffset,
+			//"width": labelWidth+6,
+			//"height": Math.floor(labelHeight*0.85)});
+		this.box.attr({
+			"font-size": this.label.attr("font-size"),
+			"text": this.label.attr("text"),
+			"x": parseInt(this.label.attr("x"))+1,
+			"y": this.label.attr("y")
+			});
 	}
 
 	// Finishing touches on label init
@@ -82,10 +103,15 @@ function City(cName, cImg, cDesc, nX, nY, nR, nColor, lX, lY, lSize, lColor) {
 	// What happens when the city is clicked on
 	this.clickMe = function() {
 		
-		if (mode == MODE_REM && confirm("Are you sure you want to remove \""+cName+"\"?")) {
+		if (mode == MODE_REM) {
+			loadCityInfo(this);
 			thisCity.hoverOffMe();
-			clearCityInfo();
-			removeCity(this);
+			if (confirm("Are you sure you want to remove \""+cName+"\"?")) {
+				removeCity(this);
+			}
+			hidePanel();
+		} else if (mode == MODE_VIEW) {
+			loadDisplay(this);
 		} else {
 			loadCityInfo(this);
 			select(this);
@@ -138,56 +164,3 @@ var mode;
 var hoverOnCursor;
 var hoverOffCursor;
 
-
-// Mode
-// ---------------
-// 0: view
-// 1: add
-// 2: remove
-// 3: edit
-
-
-function clearMode() {
-	$('.button').each(function(i, obj) {
-		$(obj).attr("src", "img/" + obj.id + ".png");
-	});
-}
-
-// This function sets the mode of the site
-// requires papercanvas to be defined
-function setMode(num) {
-	mode = num;
-	clearMode();
-	switch(mode) {
-		case MODE_VIEW:
-			hoverOnCursor = "img/cursor_cross_eye_n.png";
-			hoverOffCursor = "img/cursor_hand.png";
-			$("#button_eye").attr("src", "img/button_eye_n.png");
-		break;
-		case MODE_ADD:
-			hoverOnCursor = "img/cursor_cross_edit_n.png";
-			hoverOffCursor = "img/cursor_cross_add_n.png";
-			$("#button_add").attr("src", "img/button_add_n.png");
-		break;
-		case MODE_REM:
-			hoverOnCursor = "img/cursor_cross_rem_n.png";
-			hoverOffCursor = "img/cursor_cross_rem.png";
-			$("#button_rem").attr("src", "img/button_rem_n.png");
-		break;
-		case MODE_EDIT:
-			hoverOnCursor = "img/cursor_cross_edit_n.png";
-			hoverOffCursor = "img/cursor_cross_edit.png";
-			$("#button_edit").attr("src", "img/button_edit_n.png");
-		break;
-		default:
-			hoverOnCursor = "img/cursor_cross_eye_n.png";
-			hoverOffCursor = "img/cursor_cross_eye.png";
-		break;
-	}
-	paperCanvas.css("cursor", "url('" + hoverOffCursor + "') 13 13, default");
-}
-
-// This function selects the city to be the current city being modified, viewed, etc.
-function select(cityObj) {
-	selected = cityObj;
-}

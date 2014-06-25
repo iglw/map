@@ -51,6 +51,12 @@ buttonSave.mousedown(function(event){
 
 </div>
 
+<div id="displayBar">
+	<h2 id="cityNameDisplay"></h2><br/>
+	<span id="cityImgDisplay"></span><br/>
+	<div id="cityDescDisplay" style="text-align:left;"></div><br/>
+</div>
+
 <div id="editBar">
 	<form id="editForm">
 		<div style="margin: 0 0 0 0; font-weight: bold; font-size: 20;">
@@ -100,14 +106,15 @@ buttonSave.mousedown(function(event){
 			<textarea id="cityDescEd"></textarea>
 		  <br/>
 		<button type="button" onclick="removeCityEditBar();">Remove</button>
-		<button type="button" onclick="clearCityInfo();">Clear</button>
-		<button type="button" onclick="hidePanel();">Hide</button>
+		<button type="button" onclick="hidePanel();">Done</button>
 
 		<script>
 		
 			function removeCityEditBar() {
-				if(confirm("Are you sure you want to remove \""+selected.cName+"\"?"))
+				if(confirm("Are you sure you want to remove \""+selected.cName+"\"?")) {
 					removeCity(selected);
+					hidePanel();
+				}
 			}
 			function nodeColor(color) {
 				$("#nodeColorEd").val(color).change();
